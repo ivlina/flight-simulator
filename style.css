@@ -1,5 +1,10 @@
    /* 1 блок - Header с навигацией */
 
+   .main-header__navigation {
+    background-color: #6777FF;
+    color: #FFFFFF;
+   }
+
     /* 2 блок - Авиатренажёры Boeing 737... */
 
     /* 3 блок - Что такое авиатренажёр? */
