@@ -9,9 +9,50 @@
     /* 5 блок - Сертификат на полёт */
 
     /* 6 блок - Чем отличается Boeing от Airbus? */
-    
+
     /* 7 блок - Отзывы наших гостей */
 
     /* 8 блок - Наши инструктора */
 
     /* 9 блок - Контакты и футер */
+    .footer {
+        min-width: 360px;
+        max-width: 1925px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-top__contact {
+        font-family: 'Acrom', Arial, sans-serif;
+        font-style: bold;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 77px;
+        color: #03008D;
+    }
+
+    .footer-top__background {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .footer-middle__map {
+        min-width: 1925px;
+        min-height: 628px;
+        border: 0;
+    }
+
+    .footer-bottom {
+        background-color: #6777FF;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .item__text {
+        font-family: 'Gilroy', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 38px;
+        color: #FFFFFF;
+    }
