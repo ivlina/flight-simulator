@@ -11,6 +11,210 @@
     /* 6 блок - Чем отличается Boeing от Airbus? */
     
     /* 7 блок - Отзывы наших гостей */
+.wrapper{
+    margin-top:6739px;
+    /* margin:6379px 237px 243px; */
+}
+
+.wrapper-text{
+    font-size: 64px;
+    color:#03008D;
+    border:1px solid black;
+}
+
+.wrapper-cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    background-color: #E5E5E5;
+    width:465px;
+    border-radius: 30px;
+    padding-bottom:56px;
+    margin-top: 30px;
+    margin-left: 23px;
+    margin-bottom: 20px;
+}
+
+.card-img{
+    width:403px;
+    height: 355px; 
+    margin: 24px 30px 27px;
+    border: 1px solid black;
+}
+
+.card-sub{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    width: 403px; 
+    margin: 24px 30px 27px;
+    border: 1px solid black;  
+}
+
+.down-text{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    border: 1px solid black;  
+    justify-content: space-between;
+}
+
+.number1{
+    font-size: 36px;
+    color: #03008D;
+    text-decoration: none;
+
+}
+.number{
+    font-size: 36px;
+    color: #03008D;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+
+@media (max-width:1920px) and (min-width:1532px){
+    .wrapper{
+        margin:6379px 237px 243px;
+    }
+
+    .wrapper-cards{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .wrapper-text{
+        font-size: 64px;
+        color:#03008D;
+        border: 1px solid black;
+    }
+
+    .wrapper-cards{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .card{
+        background-color: #E5E5E5;
+        width:465px;
+        border-radius: 30px;
+        padding-bottom:56px;
+        margin-top: 30px;
+        /* margin-left: 23px; */
+        margin-bottom: 20px;
+    }
+
+    .card-img{
+        width:403px;
+        height: 355px; 
+        margin: 24px 30px 27px;
+        border: 1px solid black;
+    }
+    
+    .card-sub{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        width: 403px; 
+        margin: 24px 30px 27px;
+        border: 1px solid black;  
+    }
+    
+    .down-text{
+        display: flex;
+        align-items: center;
+        width: 250px;
+        border: 1px solid black;  
+        justify-content: space-between;
+    }
+    
+    .number1{
+        font-size: 36px;
+        color: #03008D;
+        text-decoration: none;
+    
+    }
+    .number{
+        font-size: 36px;
+        color: #03008D;
+        text-decoration: none;
+        opacity: 0.6;
+    }
+    
+}
+
+@media (max-width:1366px) and (min-width:1120px){
+   .wrapper-text{
+        font-size: 48px;
+        color:#03008D;
+        border: 1px solid black;
+    }
+    
+    .wrapper-cards{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .card{
+        background-color: #E5E5E5;
+        width:360px;
+        border-radius: 30px;
+        padding-bottom:56px;
+        margin-top: 30px;
+        /* margin-left: 23px; */
+        margin-bottom: 20px;
+    }
+    
+    .card-img{
+        width:313px;
+        height: 355px; 
+        margin: 27px 19px 20px;
+        border: 1px solid black;
+    }
+    
+    .card-sub{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        width: 332px; 
+        margin: 24px 30px 27px;
+        border: 1px solid black;  
+    }
+    
+    .down-text{
+        display: flex;
+        align-items: center;
+        width: 250px;
+        border: 1px solid black;  
+        justify-content: space-between;
+    }
+    
+    .number1{
+        font-size: 36px;
+        color: #03008D;
+        text-decoration: none;
+    
+    }
+    .number{
+        font-size: 36px;
+        color: #03008D;
+        text-decoration: none;
+        opacity: 0.6;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
 
     /* 8 блок - Наши инструктора */
 
