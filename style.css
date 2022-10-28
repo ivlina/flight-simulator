@@ -22,19 +22,25 @@
             url('fonts/liquid_crystal_display.svg#liquid_crystal_display') format('svg'); /* Chrome < 4, Legacy iOS */
     }
     @import url(https://allfont.net/allfont.css?fonts=liquid-crystal-display);
-.block4{
+.block2-4{
     display: grid;
-    grid-template-areas: "header header"
-                         "data data"
+    grid-template-areas: "block3 block3"
+                         "block4__caption block4__caption"
                          "kartalet1 kartalet2";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:auto auto auto 9.375em;
-    border: 1px solid black;
+    grid-template-rows:auto auto auto;
+    border: 1px solid rgb(186, 48, 48);
+    background: url(img/linii.svg);
+    width: 100vw;
 }
-.header {
-         grid-area:header;
-         justify-self: start;
-        padding:2em;
+.block3 {    
+    grid-area:block3;
+    justify-self: center;
+    width:66%;
+    border: 1px solid rgb(94, 186, 48);}
+
+    .block3__img{width: 100%;}
+.title {
         font-family: Acrom , Sans-Serif;
         margin: 0%;
         font-style: normal;
@@ -43,7 +49,12 @@
          line-height: 1.2;
         text-transform: uppercase;
         color: #03008D;}
-.data {   
+.block4__caption{
+    grid-area:block4__caption;
+    justify-self: start;
+    width: 66%;
+}
+.number {   
     grid-area:data;
     justify-self: start;
      padding:2em;
@@ -119,6 +130,9 @@ padding-bottom: 15.75pt;
      padding: 6.75pt 27.75pt 6.75pt 27.75pt;
      text-decoration: none;
     }
+    /*@media (min-width: 1366px) and (max-width: 1120px) {
+        
+        }*/
 
     /* 5 блок - Сертификат на полёт */
 
