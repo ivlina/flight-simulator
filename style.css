@@ -164,6 +164,11 @@
     /* 8 блок - Наши инструктора */
 
     /* 9 блок - Контакты и футер */
+
+    li {
+        list-style-type: none;
+    }
+
     .footer {
         min-width: 360px;
         max-width: 1925px;
@@ -181,14 +186,19 @@
     }
 
     .footer-top__background {
+        background-color: #6777FF;
+        border-radius: 40px 40px 0 0;
+    }
+
+    .footer-top__img {
+        min-height: 440px;
         width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
         background-size: contain;
+        padding-top: 55px;
     }
 
     .footer-middle__map {
-        min-width: 1925px;
+        width: 100%;
         min-height: 628px;
         border: 0;
     }
@@ -196,6 +206,15 @@
     .footer-bottom {
         background-color: #6777FF;
         border-radius: 0 0 10px 10px;
+        display: grid;
+        grid-template-columns: 1fr minmax(270px, 700px) 2fr minmax(150px, 350px) 1fr;
+        grid-template-rows: 2fr 3fr 3fr 3fr 1fr;
+        grid-template-areas:
+            ". . . . ."
+            ". address . logo ."
+            ". mail . subscribe ."
+            ". telepfone . networks ."
+            ". . . . .";
     }
 
     .item__text {
@@ -204,4 +223,154 @@
         font-size: 30px;
         line-height: 38px;
         color: #FFFFFF;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    .address {
+        grid-area: address;
+    }
+
+    .mail {
+        grid-area: mail;
+    }
+
+    .telepfone {
+        grid-area: telepfone;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .subscribe {
+        grid-area: subscribe;
+    }
+
+    .networks {
+        grid-area: networks;
+    }
+
+    .item-social__facebook,
+    .item-social__tiktok,
+    .item-social__vkontakte,
+    .item-social__inst {
+        width: 58px;
+        height: 57px;
+        border: 3px solid white;
+        border-radius: 16px;
+    }
+
+    .footer-icon {
+        display: flex;
+        justify-content: center;
+        transform: translateY(7px);
+    }
+
+    .icon-vk {
+        transform: translateY(15px);
+    }
+
+    .item-social {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+    }
+
+    .subscribe,
+    .logo {
+        display: flex;
+        justify-content: right;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+    }
+
+    .telepfone__img,
+    .mail__img {
+        padding-right: 20px;
+    }
+
+    .address,
+    .mail,
+    .telepfone,
+    .logo,
+    .subscribe,
+    .networks {
+        margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 1366px) {
+        .footer {
+            max-width: 1366px;
+        }
+
+        .footer-top__contact {
+            font-size: 48px;
+            line-height: 58px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer {
+            max-width: 768px;
+        }
+
+        .footer-top__contact {
+            font-size: 36px;
+            line-height: 43px;
+        }
+
+        .footer-bottom {
+            padding: 20px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .footer {
+            max-width: 700px;
+        }
+
+        .footer-top__contact {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .footer-bottom {
+            padding: 50px;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas:
+                "address"
+                "mail "
+                "telepfone"
+                "subscribe "
+                "networks"
+                "logo";
+        }
+
+        .subscribe {
+            display: flex;
+            justify-content: left;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            background-size: contain;
+        }
+
+        .item__text {
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        .item-social {
+            justify-content: space-between;
+            padding: 0 200px 0 0;
+        }
     }
