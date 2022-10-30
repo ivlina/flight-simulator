@@ -2,158 +2,163 @@
         display: grid;
         grid-template-rows: repeat(7, fit-content);
     }
-   
-   /* 1 блок - Header с навигацией */
 
-   .main-header__navigation {
-    background-color: #6777FF;
-    color: #FFFFFF;
-   }
+    /* 1 блок - Header с навигацией */
 
-   .main-header__body__title__first-word,
-   .main-header__body__title__fourth-word {
-    color: #6777FF;
-   }
-
-   .main-header__body__gift-certificate {
-    background-color: #E5E5E5;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-   }
-
-   .main-header__body__gift-certificate__subtitle {
-    background-color: #6777FF;
-
-    grid-column: 1 / 3;
-   }
+    .main-header__navigation {
+        background-color: #6777FF;
+        color: #FFFFFF;
+    }
 
     /* 2 блок - Авиатренажёры Boeing 737... */
 
     /* 3 блок - Что такое авиатренажёр? */
 
     /* 4 блок - Куда можно лететь? */
-
     @font-face {
         font-family: 'Gilroy-Medium';
-        src: url('fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
-        src: url('fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-            url('fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
-            url('fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-            url('fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
-            url('fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+        src: url('fonts/gilroy-medium.eot');
+        /* IE 9 Compatibility Mode */
+        src: url('fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'),
+            /* IE < 9 */
+            url('fonts/gilroy-medium.woff2') format('woff2'),
+            /* Super Modern Browsers */
+            url('fonts/gilroy-medium.woff') format('woff'),
+            /* Firefox >= 3.6, any other modern browser */
+            url('fonts/gilroy-medium.ttf') format('truetype'),
+            /* Safari, Android, iOS */
+            url('fonts/gilroy-medium.svg#gilroy-medium') format('svg');
+        /* Chrome < 4, Legacy iOS */
         font-family: 'Liquid Crystal Display';
-        src: url('fonts/liquid_crystal_display.eot'); /* IE 9 Compatibility Mode */
-        src: url('fonts/liquid_crystal_display.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-            url('fonts/liquid_crystal_display.woff2') format('woff2'), /* Super Modern Browsers */
-            url('fonts/liquid_crystal_display.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-            url('fonts/liquid_crystal_display.ttf') format('truetype'), /* Safari, Android, iOS */
-            url('fonts/liquid_crystal_display.svg#liquid_crystal_display') format('svg'); /* Chrome < 4, Legacy iOS */
+        src: url('fonts/liquid_crystal_display.eot');
+        /* IE 9 Compatibility Mode */
+        src: url('fonts/liquid_crystal_display.eot?#iefix') format('embedded-opentype'),
+            /* IE < 9 */
+            url('fonts/liquid_crystal_display.woff2') format('woff2'),
+            /* Super Modern Browsers */
+            url('fonts/liquid_crystal_display.woff') format('woff'),
+            /* Firefox >= 3.6, any other modern browser */
+            url('fonts/liquid_crystal_display.ttf') format('truetype'),
+            /* Safari, Android, iOS */
+            url('fonts/liquid_crystal_display.svg#liquid_crystal_display') format('svg');
+        /* Chrome < 4, Legacy iOS */
     }
+
     @import url(https://allfont.net/allfont.css?fonts=liquid-crystal-display);
-.block4{
-    display: grid;
-    grid-template-areas: "header header"
-                         "data data"
-                         "kartalet1 kartalet2";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:auto auto auto 9.375em;
-    border: 1px solid black;
-}
-.header {
-         grid-area:header;
-         justify-self: start;
-        padding:2em;
-        font-family: Acrom , Sans-Serif;
+
+    .block4 {
+        display: grid;
+        grid-template-areas: "header header"
+            "data data"
+            "kartalet1 kartalet2";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto 9.375em;
+        border: 1px solid black;
+    }
+
+    .header {
+        grid-area: header;
+        justify-self: start;
+        padding: 2em;
+        font-family: Acrom, Sans-Serif;
         margin: 0%;
         font-style: normal;
         font-weight: 700;
         font-size: 4em;
-         line-height: 1.2;
+        line-height: 1.2;
         text-transform: uppercase;
-        color: #03008D;}
-.data {   
-    grid-area:data;
-    justify-self: start;
-     padding:2em;
-    font-family: 'Liquid Crystal Display', arial;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 37px;
-    margin: 0%;
-    color: #03008D;
-}
-.kartalet1 
-{   grid-area:kartalet1;
-    justify-self: end;
-    padding-right: 34.5pt;
-    width: 70%;
-    height: auto;
-    border:1px solid black;
-    margin: 0%;
-    
-}
-.kartalet2{
-    grid-area:kartalet2;
-    justify-self:start;
-    padding-left: 34.5pt;
-    width: 70%;
-    height: auto;
-    border:1px solid black;
-    margin: 0%;
-    
-}
-.kartalet__header-block{
-    border-radius: 1.875em 1.875em 0px 0px;
-    background:#6777FF;
-    width: 100%;
-    margin: 0%;
+        color: #03008D;
     }
-.kartalet__header{
-    margin: 0%;
-    padding-left: 29.25pt;
-    padding-top:21pt;
-    padding-bottom: 20.25pt;
-    font-family: 'Acrom', Sans-Serif;
-font-style: normal;
-font-weight: 700;
-font-size: 36pt;
-line-height: 1.2;
-text-transform: uppercase;
-color: #FFFFFF;
- }
-.kartalet__text {font-family: 'Gilroy-Medium', Sans-Serif;
-font-style: normal;
-font-weight: 500;
-font-size:1.5em;
-line-height: 1.2;
-margin:0%;
-color: #000000;
-padding-top: 35.25pt;
-padding-bottom: 15.75pt;
-}
-.kartalet__img{
-    width: 100%;
-}
-.kartalet__button
-{font-family: 'Gilroy-Medium', Sans-Serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-     color: #FFFFFF;
-     background: #6777FF;
-     border-radius: 100px;
-     padding: 6.75pt 27.75pt 6.75pt 27.75pt;
-     text-decoration: none;
+
+    .data {
+        grid-area: data;
+        justify-self: start;
+        padding: 2em;
+        font-family: 'Liquid Crystal Display', arial;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 37px;
+        margin: 0%;
+        color: #03008D;
+    }
+
+    .kartalet1 {
+        grid-area: kartalet1;
+        justify-self: end;
+        padding-right: 34.5pt;
+        width: 70%;
+        height: auto;
+        border: 1px solid black;
+        margin: 0%;
+
+    }
+
+    .kartalet2 {
+        grid-area: kartalet2;
+        justify-self: start;
+        padding-left: 34.5pt;
+        width: 70%;
+        height: auto;
+        border: 1px solid black;
+        margin: 0%;
+
+    }
+
+    .kartalet__header-block {
+        border-radius: 1.875em 1.875em 0px 0px;
+        background: #6777FF;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .kartalet__header {
+        margin: 0%;
+        padding-left: 29.25pt;
+        padding-top: 21pt;
+        padding-bottom: 20.25pt;
+        font-family: 'Acrom', Sans-Serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36pt;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .kartalet__text {
+        font-family: 'Gilroy-Medium', Sans-Serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 1.2;
+        margin: 0%;
+        color: #000000;
+        padding-top: 35.25pt;
+        padding-bottom: 15.75pt;
+    }
+
+    .kartalet__img {
+        width: 100%;
+    }
+
+    .kartalet__button {
+        font-family: 'Gilroy-Medium', Sans-Serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+        background: #6777FF;
+        border-radius: 100px;
+        padding: 6.75pt 27.75pt 6.75pt 27.75pt;
+        text-decoration: none;
     }
 
     /* 5 блок - Сертификат на полёт */
 
     /* 6 блок - Чем отличается Boeing от Airbus? */
-    
+
     /* 7 блок - Отзывы наших гостей */
     .block7{
         display: grid;
@@ -428,3 +433,213 @@ padding-bottom: 15.75pt;
     /* 8 блок - Наши инструктора */
 
     /* 9 блок - Контакты и футер */
+
+    li {
+        list-style-type: none;
+    }
+
+    .footer {
+        min-width: 360px;
+        max-width: 1925px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-top__contact {
+        font-family: 'Acrom', Arial, sans-serif;
+        font-style: bold;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 77px;
+        color: #03008D;
+    }
+
+    .footer-top__background {
+        background-color: #6777FF;
+        border-radius: 40px 40px 0 0;
+    }
+
+    .footer-top__img {
+        min-height: 440px;
+        width: 100%;
+        background-size: contain;
+        padding-top: 55px;
+    }
+
+    .footer-middle__map {
+        width: 100%;
+        min-height: 628px;
+        border: 0;
+    }
+
+    .footer-bottom {
+        background-color: #6777FF;
+        border-radius: 0 0 10px 10px;
+        display: grid;
+        grid-template-columns: 1fr minmax(270px, 700px) 2fr minmax(150px, 350px) 1fr;
+        grid-template-rows: 2fr 3fr 3fr 3fr 1fr;
+        grid-template-areas:
+            ". . . . ."
+            ". address . logo ."
+            ". mail . subscribe ."
+            ". telepfone . networks ."
+            ". . . . .";
+    }
+
+    .item__text {
+        font-family: 'Gilroy', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 38px;
+        color: #FFFFFF;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    .address {
+        grid-area: address;
+    }
+
+    .mail {
+        grid-area: mail;
+    }
+
+    .telepfone {
+        grid-area: telepfone;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .subscribe {
+        grid-area: subscribe;
+    }
+
+    .networks {
+        grid-area: networks;
+    }
+
+    .item-social__facebook,
+    .item-social__tiktok,
+    .item-social__vkontakte,
+    .item-social__inst {
+        width: 58px;
+        height: 57px;
+        border: 3px solid white;
+        border-radius: 16px;
+    }
+
+    .footer-icon {
+        display: flex;
+        justify-content: center;
+        transform: translateY(7px);
+    }
+
+    .icon-vk {
+        transform: translateY(15px);
+    }
+
+    .item-social {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+    }
+
+    .subscribe,
+    .logo {
+        display: flex;
+        justify-content: right;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+    }
+
+    .telepfone__img,
+    .mail__img {
+        padding-right: 20px;
+    }
+
+    .address,
+    .mail,
+    .telepfone,
+    .logo,
+    .subscribe,
+    .networks {
+        margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 1366px) {
+        .footer {
+            max-width: 1366px;
+        }
+
+        .footer-top__contact {
+            font-size: 48px;
+            line-height: 58px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer {
+            max-width: 768px;
+        }
+
+        .footer-top__contact {
+            font-size: 36px;
+            line-height: 43px;
+        }
+
+        .footer-bottom {
+            padding: 20px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .footer {
+            max-width: 700px;
+        }
+
+        .footer-top__contact {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .footer-bottom {
+            padding: 50px;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas:
+                "address"
+                "mail "
+                "telepfone"
+                "subscribe "
+                "networks"
+                "logo";
+        }
+
+        .subscribe {
+            display: flex;
+            justify-content: left;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            background-size: contain;
+        }
+
+        .item__text {
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        .item-social {
+            justify-content: space-between;
+            padding: 0 200px 0 0;
+        }
+    }
