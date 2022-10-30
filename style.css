@@ -5,10 +5,137 @@
 
     /* 1 блок - Header с навигацией */
 
-    .main-header__navigation {
-        background-color: #6777FF;
-        color: #FFFFFF;
-    }
+    /* Навигация */
+
+.main-header__navigation {
+    background-color: #6777FF;
+    color: white;
+    font-size: 1.8vh;
+
+    padding: 2em 9em;
+}
+
+.main-header__navigation__with-paddings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header__navigation__contact {
+    padding-bottom: 30px;
+}
+
+.main-header__navigation__contact__phone {
+    font-weight: bold;
+}
+
+/* Основная часть */
+
+    /* Заголовок */
+
+.main-header__body {
+    padding-left: 9em;
+}
+
+.main-header__body__title {
+    width: 50%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-header__body__title__first-word {
+    font-size: 154px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-header__body__title__second-word {
+    font-size: 36px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-header__body__title__third-word {
+    font-size: 64px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-header__body__title__fourth-word {
+    font-size: 70px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-header__body__title__first-word,
+.main-header__body__title__fourth-word {
+    color: #6777FF;
+}
+
+        /* Таблица */
+
+.main-header__body__gift-certificate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: fit-content 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+    margin-top: 20px;
+
+    background-color: #E5E5E5;
+}
+
+.main-header__body__gift-certificate__subtitle {
+    grid-column: 1 / 3;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    background-color: #6777FF;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 47px;  
+}
+
+.main-header__body__gift-certificate__price {
+    color: #03008D;;
+}
+
+.main-header__body__gift-certificate__time-60 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.main-header__body__gift-certificate__time-120 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.main-header__body__gift-certificate__price,
+.main-header__body__gift-certificate__time {
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 56px;
+}
+
+.main-header__body__background {
+    position: absolute;
+    right: 0;
+    top: 8em;
+    width: 60%;
+}
 
     /* 2 блок - Авиатренажёры Boeing 737... */
 
