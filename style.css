@@ -155,202 +155,267 @@ padding-bottom: 15.75pt;
     /* 6 блок - Чем отличается Boeing от Airbus? */
     
     /* 7 блок - Отзывы наших гостей */
-.wrapper{
-    margin-top:6739px;
-    /* margin:6379px 237px 243px; */
-}
-
-.wrapper-text{
-    font-size: 64px;
-    color:#03008D;
-    border:1px solid black;
-}
-
-.wrapper-cards{
-    display: flex;
-    justify-content: space-around;
-}
-
-.card{
-    background-color: #E5E5E5;
-    width:465px;
-    border-radius: 30px;
-    padding-bottom:56px;
-    margin-top: 30px;
-    margin-left: 23px;
-    margin-bottom: 20px;
-}
-
-.card-img{
-    width:403px;
-    height: 355px; 
-    margin: 24px 30px 27px;
-    border: 1px solid black;
-}
-
-.card-sub{
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    width: 403px; 
-    margin: 24px 30px 27px;
-    border: 1px solid black;  
-}
-
-.down-text{
-    display: flex;
-    align-items: center;
-    width: 250px;
-    border: 1px solid black;  
-    justify-content: space-between;
-}
-
-.number1{
-    font-size: 36px;
-    color: #03008D;
-    text-decoration: none;
-
-}
-.number{
-    font-size: 36px;
-    color: #03008D;
-    text-decoration: none;
-    opacity: 0.6;
-}
-
-
-@media (max-width:1920px) and (min-width:1532px){
-    .wrapper{
-        margin:6379px 237px 243px;
-    }
-
-    .wrapper-cards{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .wrapper-text{
-        font-size: 64px;
-        color:#03008D;
+    .block7{
+        display: grid;
+        grid-template-areas: "block-title block-title block-title"
+                            "card1 card2 card3"
+                            "numbers numbers numbers";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:auto auto auto auto;
         border: 1px solid black;
-    }
-
-    .wrapper-cards{
-        display: flex;
-        justify-content: space-around;
+        column-gap: 1em;
+        margin: 10%;
+        margin-top: 6739px;
     }
     
-    .card{
-        background-color: #E5E5E5;
-        width:465px;
-        border-radius: 30px;
-        padding-bottom:56px;
-        margin-top: 30px;
-        /* margin-left: 23px; */
-        margin-bottom: 20px;
-    }
-
-    .card-img{
-        width:403px;
-        height: 355px; 
-        margin: 24px 30px 27px;
-        border: 1px solid black;
+    .block-title{
+        grid-area: block-title;
+        justify-self: start;
+        padding-left:0%;
+        padding-bottom: 2%;
+        font-family: 'Acrom', 'Sans-Serif';
+        margin: 0%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4em;
+        line-height: 1.3;
+        text-transform: uppercase;
+        color: #03008D;
+        border:1px solid black;
     }
     
-    .card-sub{
-        font-size: 24px;
+    .card__img{
+        width: 95%;
+        padding:3%;
+    }
+    
+    .card__text{
+        width: 95%;
+        text-align: justify;
+        padding:3%;
+        margin: 0%;
+        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 500;
-        width: 403px; 
-        margin: 24px 30px 27px;
-        border: 1px solid black;  
+        font-size: 1.5em;
+        line-height: 1.3;
+        border:1px solid black;
     }
     
-    .down-text{
-        display: flex;
-        align-items: center;
-        width: 250px;
-        border: 1px solid black;  
-        justify-content: space-between;
+    .card1{
+        grid-area: card1;
+        justify-self: end;
+        margin-left: 18%;
+        /* width: 70%; */
+        height: auto;
+        margin: 0%;
+        border-radius: 1em;
+        background-color: #E5E5E5;
+        border:1px solid black;
+    }
+    
+    .card2{
+        grid-area: card2;
+        border-radius: 1em;
+        justify-self: center;
+        margin-left:0%;
+        /* width: 70%; */
+        height: auto;
+        /* margin: 0%; */
+        background-color: #E5E5E5;
+        border:1px solid black;
+    }
+    
+    .card3{
+        grid-area: card3;
+        justify-self: end;
+        /* margin-right: 20%; */
+        /* width: 70%; */
+        height: auto;
+        /* margin: 0%; */
+        border-radius: 1em;
+        background-color: #E5E5E5;
+        border:1px solid black;
+    }
+    
+    .numbers{
+        grid-area: numbers;
+        justify-self: start;
+        padding-left:0%;
+        padding-top: 2%;
+        font-family: 'Liquid Crystal Display', 'Sans-Serif';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.25em;
+        line-height: 1.3;
+        margin: 0%;
+        color: #03008D;
+        border:1px solid black;
     }
     
     .number1{
-        font-size: 36px;
-        color: #03008D;
         text-decoration: none;
     
     }
     .number{
-        font-size: 36px;
         color: #03008D;
         text-decoration: none;
         opacity: 0.6;
     }
     
-}
+    
+    @media(max-width:1366px) {
+        .block7{
+            margin-top:6139px;
+        }
 
-@media (max-width:1366px) and (min-width:1120px){
-   .wrapper-text{
-        font-size: 48px;
-        color:#03008D;
-        border: 1px solid black;
+        .block-title{
+            font-size: 3em;
+            border:1px solid black;
+        }
+    
+        .card__text{
+            font-size: 1.25em;
+            line-height: 1.2;
+            text-align:justify;
+            /* text-justify: auto; */
+            border:1px solid black;
+        }
     }
     
-    .wrapper-cards{
-        display: flex;
-        justify-content: space-around;
+    @media (max-width:769px){
+        .block7{
+            display: grid;
+            grid-template-areas: "block-title block-title"
+                                "card1 card2"
+                                "numbers numbers";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:auto auto auto auto;
+            border: 1px solid black;
+            column-gap: 1em;
+            margin: 10%;
+            margin-top: 4363px;
+
+        }
+        .block-title{
+            grid-area: block-title;
+            justify-self: start;
+            padding-left:0%;
+            margin: 0%;
+            font-weight: 700;
+            font-size: 2.25em;
+            line-height: 1.2;
+            border:1px solid black;
+        }
+    
+        .card__text{
+            font-size: 1.25em;
+            line-height: 1.2;
+            text-align:justify;
+            /* text-justify: auto; */
+            border:1px solid black;
+        }
+    
+        .card1{
+            grid-area: card1;
+            justify-self: end;
+            margin-left: 18%;
+            height: auto;
+            margin: 0%;
+            border-radius: 1em;
+            border:1px solid black;
+        }
+    
+        .card2{
+            grid-area: card2;
+            border-radius: 1em;
+            justify-self: center;
+            margin-left:0%;
+            height: auto;
+            border:1px solid black;
+        }
+    
+        .card3{
+            display: none;
+        }
+    
+        .numbers{
+            grid-area: numbers;
+            justify-self: start;
+            padding-left:0%;
+            font-weight: 400;
+            font-size: 1.5em;
+            line-height: 1.2;
+            margin: 0%;
+            color: #03008D;
+            border:1px solid black;
+        }
     }
     
-    .card{
-        background-color: #E5E5E5;
-        width:360px;
-        border-radius: 30px;
-        padding-bottom:56px;
-        margin-top: 30px;
-        /* margin-left: 23px; */
-        margin-bottom: 20px;
-    }
+    @media (max-width:320px){
+        .block7{
+            display: grid;
+            grid-template-areas: "block-title"
+                                "card1"
+                                "numbers";
+            grid-template-columns: 1fr;
+            grid-template-rows:auto auto auto auto;
+            border: 1px solid black;
+            column-gap: 1em;
+            margin: 10%;
+            margin-top: 3648px;
+            
+        }
     
-    .card-img{
-        width:313px;
-        height: 355px; 
-        margin: 27px 19px 20px;
-        border: 1px solid black;
-    }
+        .block-title{
+            grid-area: block-title;
+            justify-self: start;
+            padding-left:0%;
+            margin: 0%;
+            font-weight: 700;
+            font-size: 1.125em;
+            line-height: 1.2;
+            border:1px solid black;
+        }
     
-    .card-sub{
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        width: 332px; 
-        margin: 24px 30px 27px;
-        border: 1px solid black;  
-    }
+        .card__text{
+            font-size: 1em;
+            line-height: 1;
+            text-align:justify;
+            /* text-justify: auto; */
+            border:1px solid black;
+        }
     
-    .down-text{
-        display: flex;
-        align-items: center;
-        width: 250px;
-        border: 1px solid black;  
-        justify-content: space-between;
-    }
+        .card1{        
+            grid-area: card1;
+            justify-self: end;
+            margin-left: 18%;
+            height: auto;
+            margin: 0%;
+            border-radius: 1em;
+            border:1px solid black;
+        }
+        .card2{
+            display: none;
+        }
     
-    .number1{
-        font-size: 36px;
-        color: #03008D;
-        text-decoration: none;
+        .card3{
+            display: none;
+        }
     
-    }
-    .number{
-        font-size: 36px;
-        color: #03008D;
-        text-decoration: none;
-        opacity: 0.6;
+        .numbers{
+            grid-area: numbers;
+            /* justify-self: center; */
+            padding-left:0%;
+            font-weight:700;
+            font-size: 1.125em;
+            line-height: 1.2em;
+            margin: 0%;
+            border:1px solid black;
+        }
     }
 
 
-
-}
 
 
 
