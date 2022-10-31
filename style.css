@@ -251,24 +251,52 @@
         grid-area: networks;
     }
 
-    .item-social__facebook,
-    .item-social__tiktok,
-    .item-social__vkontakte,
     .item-social__inst {
+        background-image: url(img/footer/Instagram.png);
+        min-width: 50px;
+        min-height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
         width: 58px;
-        height: 57px;
+        min-height: 57px;
         border: 3px solid white;
         border-radius: 16px;
     }
 
-    .footer-icon {
-        display: flex;
-        justify-content: center;
-        transform: translateY(7px);
+    .item-social__facebook {
+        background: url(img/footer/f.png) no-repeat center center;
+        min-width: 50px;
+        min-height: auto;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        width: 58px;
+        min-height: 57px;
+        border: 3px solid white;
+        border-radius: 16px;
     }
 
-    .icon-vk {
-        transform: translateY(15px);
+    .item-social__tiktok {
+        background: url(img/footer/TikTok.png) no-repeat center center;
+        min-width: 50px;
+        min-height: auto;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        width: 58px;
+        min-height: 57px;
+        border: 3px solid white;
+        border-radius: 16px;
+    }
+
+    .item-social__vkontakte {
+        background: url(img/footer/VK.png) no-repeat center center;
+        min-width: 50px;
+        min-height: auto;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        width: 58px;
+        min-height: 57px;
+        border: 3px solid white;
+        border-radius: 16px;
     }
 
     .item-social {
@@ -294,10 +322,7 @@
     }
 
     .address,
-    .mail,
-    .telepfone,
     .logo,
-    .subscribe,
     .networks {
         margin-bottom: 15px;
     }
@@ -361,7 +386,6 @@
             display: flex;
             justify-content: center;
             padding: 0;
-            background-size: contain;
         }
 
         .item__text {
@@ -372,5 +396,17 @@
         .item-social {
             justify-content: space-between;
             padding: 0 200px 0 0;
+        }
+
+        .item__logo {
+            width: 180px;
+        }
+
+        .item-social__inst,
+        .item-social__facebook,
+        .item-social__tiktok,
+        .item-social__vkontakte {
+            width: 78px;
+            height: 77px;
         }
     }
