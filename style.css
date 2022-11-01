@@ -152,7 +152,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows:auto auto auto auto;
         border: 1px solid rgb(186, 48, 48);
-        background: url(img/linii.svg);
+        background: url(img-block2/linii.svg);
         width: 100vw;
         background-repeat: no-repeat;
         background-size:100%;
@@ -173,7 +173,7 @@
     text-transform: uppercase;
     color: #000000;
     border: 1px solid rgb(186, 48, 48);
-    background: url(img/blok2__img.svg);
+    background: url(img-block2/blok2__img.svg);
         background-repeat: no-repeat;
         background-position:center top 0px;
         background-size:75%;
