@@ -8,11 +8,48 @@
     <title>TFTaero</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="shortcut icon" href="assets/icons/icon.png" type="image/x-icon">
 </head>
 <body>
+<div class="root">
 
     <!-- 1 блок - Header с навигацией -->
+
+    <header class="main-header">
+        <nav class="main-header__navigation">
+            <div>
+                <img src="assets/icons/tft-icon.png" alt="Логотип компании TFT aero">
+                <p>ЧТО ТАКОЕ АВИАТРЕНАЖЁР?</p>
+                <p>ГДЕ ЛЕТАТЬ?</p>
+                <p>ЦЕНЫ</p>
+                <p>ОТЗЫВЫ</p>
+                <p>ИНСТРУКТОРА</p>
+                <p>КОНТАКТЫ</p>
+            </div>
+            <div>
+                <address>МОСКВА, АВТОЗАВОДСКАЯ УЛИЦА, Д. 18Б<br>ТРЦ РИВЬЕРА, 3 ЭТАЖ</address>
+                <p><a href="tel:+74952284708"><img src="assets/icons/phone-icon.png" alt="Кнопка вызова"></a>+7 (495) 228-47-08</p>
+            </div>
+        </nav>
+        <div class="main-header__body">
+            <div class="main-header__body__title">
+                <p class="main-header__body__title__first-word">ВЫ</p>
+                <p class="main-header__body__title__second-word">ПРОБОВАЛИ</p>
+                <p class="main-header__body__title__third-word">УПРАВЛЯТЬ</p>
+                <p class="main-header__body__title__fourth-word">БОИНГОМ?</p>
+            </div>
+            <div class="main-header__body__gift-certificate">
+                <h2 class="main-header__body__gift-certificate__subtitle">ПОДАРОЧНЫЕ СЕРТИФИКАТЫ</h2>
+                <p>30 МИН</p>
+                <p>60 МИН</p>
+                <p>120 МИН</p>
+                <p>5000 - 00</p>
+                <p>9000 - 00</p>
+                <p>18000 - 00</p>
+            </div>
+            <img src="assets/images/pilot.jpg" alt="Фотография пилота">
+        </div>
+    </header>
 
     <!-- 2 блок - Авиатренажёры Boeing 737... -->
 
@@ -20,14 +57,17 @@
 
     <!-- 4 блок - Куда можно лететь? -->
     <div class="block2-4">
+        <div class="block2">АВИАТРЕНАЖЕРЫ 
+            <span class="block2__selection"> BOEING 737</span> И <span class="block2__selection">AIRBUS 320</span>
+            НА ПОДВИЖНОЙ ПЛАТФОРМЕ</div>
         <div class="block3">
-    <p class="title">ЧТО ТАКОЕ АВИАТРЕНАЖЕР?</p> 
-    <img src="img/aviatren.png" alt="" class="block3__img">
-    </div>
-    <div class="block4__caption">
-    <p class="title">КУДА МОЖНО ЛЕТАТЬ?</p> 
-    <p class="number">01 02 03 04</p>
-    </div>
+            <p class="title">ЧТО ТАКОЕ АВИАТРЕНАЖЕР?</p> 
+            <img src="img/aviatren.png" alt="" class="block3__img">
+        </div>
+        <div class="block4__caption">
+            <p class="title">КУДА МОЖНО ЛЕТАТЬ?</p> 
+            <p class="kartalet__number">01 02 03 04</p>
+        </div>
     <div class="kartalet1">
         <div class="kartalet__header-block">
            <p class="kartalet__header">Круг в ДОМОДЕДОВО</p>
@@ -45,15 +85,68 @@
         <a href="#" class="kartalet__button">читать далее</a>
     </div>
 </div>
+
     <!-- 5 блок - Сертификат на полёт -->
 
     <!-- 6 блок - Чем отличается Boeing от Airbus? -->
 
     <!-- 7 блок - Отзывы наших гостей -->
 
+    <div class="wrapper">
+            <h1 class="wrapper-text" >Отзывы наших гостей</h1>
+        <div class="wrapper-cards">
+            <div class="card">
+                <img class="card-img" src="img/pic1.png" 
+                alt="Girl">
+                <div class="card-sub">
+                    Огромное спасибо компании ТФТаеро организаторам за 
+                    предоставленную возможность воспользоваться сертификатом.
+                    Получили огромное удовольствие от полёта, сын в восторге! 
+                    Спасибо пилоту Алексею за инструктаж. 
+                    Рекомендую друзьям и вам! И да, берите сразу сеанс от 1 часа.
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="img/pic2.png" alt="Girl">
+                <div class="card-sub">
+                    Большое спасибо инструктору Сергею. 
+                    Подарила сыновьям 1час полета и не пожалела. 
+                    Позитивные эмоции, яркие впечатления , доброжелательность 
+                    и коммуникабельность персонала. Вообщем, сюрприз удался. 
+                    Спасибо. Рекомендую родителям взрослых детей.
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="img/pic3.png" alt="Girl">
+                <div class="card-sub">
+                    Меня в принципе сложно впечатлить, но вам это 
+                    сделать удалось! Незабываемые ощущение, полное погружение, 
+                    летал на Боинге 737. Сертификат на 1 час, 
+                    за это время успел совершить два незабываемых полёта. 
+                    Пролетел на огромном лайнере ПОД мостом реки Гудзон, 
+                    в Нью-Йорке, а затем совершил 
+                    грандиозный полет в Альпах, в грозу, во время турбулентности. 
+                </div>
+            </div>    
+        </div>
+
+        <div class="down-text">
+            <a class="vector" href="#"><img src="img/vector1.png" 
+                alt="left vector"></a>
+            <a class="number1" href="#">01</a>
+            <a class="number" href="#">02</a>
+            <a class="number" href="#">03</a>
+            <a class="number"href="#">04</a>
+            <a class="vector" href="#"><img src="img/vector2.png" 
+                alt="right vector2"></a>
+        </div>
+    </div>    
+
     <!-- 8 блок - Наши инструктора -->
 
     <!-- 9 блок - Контакты и футер -->
     
+</div>
 </body>
 </html>
