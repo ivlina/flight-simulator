@@ -42,7 +42,6 @@
                              "kartalet1 kartalet2";
         grid-template-columns: 1fr 1fr;
         grid-template-rows:auto auto auto auto;
-        border: 1px solid rgb(186, 48, 48);
         background: url(img-block2/linii.svg);
         width: 100vw;
         background-repeat: no-repeat;
@@ -55,16 +54,15 @@
         justify-self: center;
         width:75%;
         text-align: center;
-        font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 69px;
-    line-height: 1.2;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-    border: 1px solid rgb(186, 48, 48);
-    background: url(img-block2/blok2__img.svg);
+        font-family: 'Gilroy', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 4.3125em;
+        line-height: 1.2;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        background: url(img-block2/blok2__img.svg);
         background-repeat: no-repeat;
         background-position:center top 0px;
         background-size:75%;
@@ -76,14 +74,12 @@
     } 
     .block3 {    
         grid-area:block3;
-       
         width:66%;
-        border: 1px solid rgb(94, 186, 48);
         padding-left: 238px;}
     
-        .block3__img{width: 100%;}
+    .block3__img{width: 100%;}
     .title {
-            font-family: Acrom , Sans-Serif;
+        font-family: 'Acrom', Arial, sans-serif;
             margin: 0%;
             font-style: normal;
             font-weight: 700;
@@ -97,27 +93,29 @@
         width: 66%;
         padding-left: 238px;
     }
+    .block4__selection{
+        color: #03008D;
+    }
     .kartalet__number{   
         grid-area:data;
         justify-self: start;
-         
         font-family: 'Liquid Crystal Display', arial;
         font-style: normal;
         font-weight: 400;
         font-size: 36px;
         line-height: 37px;
         margin: 0%;
-        color: #03008D;
+        color:#6777FF;;
         padding-top:2em;
         padding-bottom:2em;
-    }
+        }
+    .kartalet__link {text-decoration: none;}
     .kartalet1 
     {   grid-area:kartalet1;
         justify-self: end;
         padding-right: 34.5pt;
         width: 70%;
         height: auto;
-        border:1px solid black;
         margin: 0%;
         
     }
@@ -127,9 +125,7 @@
         padding-left: 34.5pt;
         width: 70%;
         height: auto;
-        border:1px solid black;
         margin: 0%;
-        
     }
     .kartalet__header-block{
         border-radius: 1.875em 1.875em 0px 0px;
@@ -142,15 +138,16 @@
         padding-left: 29.25pt;
         padding-top:21pt;
         padding-bottom: 20.25pt;
-        font-family: 'Acrom', Sans-Serif;
+        font-family: 'Acrom', Arial, sans-serif;;
     font-style: normal;
     font-weight: 700;
-    font-size: 36pt;
+    font-size: 2.25em;
     line-height: 1.2;
     text-transform: uppercase;
     color: #FFFFFF;
      }
-    .kartalet__text {font-family: 'Gilroy-Medium', Sans-Serif;
+    .kartalet__text {
+        font-family: 'Gilroy', Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size:1.5em;
@@ -164,11 +161,11 @@
         width: 100%;
     }
     .kartalet__button
-    {font-family: 'Gilroy-Medium', Sans-Serif;
+    {font-family: 'Gilroy', Arial, sans-serif;
         font-style: normal;
         font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 1.5em;
+        line-height: 1.2;
          color: #FFFFFF;
          background: #6777FF;
          border-radius: 100px;
@@ -178,7 +175,7 @@
         @media (max-width:1366px) and (min-width:1120px)
         {
             .block2 {
-            font-size: 48px;
+            font-size: 3em;
             line-height: 1.2;
                 padding-top: 58px;
                 padding-bottom: 194px;
@@ -189,18 +186,17 @@
             
                 .block3__img{width: 100%;}
             .title {
-                    font-size: 4em;
+                    font-size: 3em;
                      line-height: 1.2;
-                     font-size: 36px;
-                     line-height: 43px;
+                     
                     }
             .block4__caption{
                 padding-left: 123px;
             }
             .kartalet__number {   
             
-                font-size: 36px;
-                line-height: 37px;
+                font-size: 2.25em;
+                line-height: 1;
             
             }
             .kartalet1 
@@ -209,7 +205,6 @@
                 padding-right: 34.5pt;
                 width: 70%;
                 height: auto;
-                border:1px solid black;
                 margin: 0%;
                 
             }
@@ -219,99 +214,86 @@
                 padding-left: 34.5pt;
                 width: 70%;
                 height: auto;
-                border:1px solid black;
                 margin: 0%;
                 
             }
-            .kartalet__header-block{
-                border-radius: 1.875em 1.875em 0px 0px;
-                background:#6777FF;
-                width: 100%;
-                margin: 0%;
-                }
             .kartalet__header{
-                font-size: 26px;
-                line-height: 31px;
+                font-size: 2.25em;
+                line-height: 1.2;
              }
             .kartalet__text {
-                font-size: 24px;
-                line-height: 29px;
+                font-size: 2.25em;
+                line-height: 1.2;
             }
             .kartalet__img{
                 width: 100%;
             }
             .kartalet__button
-            {font-size: 20px;
-                line-height: 24px;
+            {font-size: 1.5em;
+                line-height:1.2;
                 }
         }
         @media (max-width:1119px) and (min-width:768px)
         {
             .block2 {
-                font-size: 35px;
+            font-size: 2.1875em;
             line-height: 1.2;
-                padding-top: 58px;
-                padding-bottom: 194px;
+               margin-top: 40px;
+                padding-top: 30px;
+                padding-bottom: 128px;
+                width: 90%;
             }
             .block3 {    
-                width: 75%;
-                padding-left: 22px;}
+                width: 89%;
+                padding-left: 38px;}
             
+                .block3__img{width: 100%;}
             .title {
-                    font-size: 36px;
+                    font-size: 2.1875em;
                      line-height: 1.2;
-                     font-size: 36px;
-                     line-height: 43px;
+                     
                     }
             .block4__caption{
                 padding-left: 22px;
             }
             .kartalet__number {   
             
-                font-size: 24px;
-                line-height: 25px;
+                font-size: 2.1875em;
+                line-height: 1;
             
             }
             .kartalet1 
             {   grid-area:kartalet1;
                 justify-self: end;
-                padding-right: 34.5pt;
-                width: 70%;
+                padding-right:13px;
+                width: 90%;
                 height: auto;
-                border:1px solid black;
                 margin: 0%;
                 
             }
             .kartalet2{
                 grid-area:kartalet2;
                 justify-self:start;
-                padding-left: 34.5pt;
-                width: 70%;
+                padding-left: 13px;
+                width: 90%;
                 height: auto;
-                border:1px solid black;
                 margin: 0%;
+                border: 0px;
                 
             }
-            .kartalet__header-block{
-                border-radius: 1.875em 1.875em 0px 0px;
-                background:#6777FF;
-                width: 100%;
-                margin: 0%;
-                }
             .kartalet__header{
-                font-size: 26px;
-                line-height: 31px;
+                font-size: 1.625em;
+                line-height: 1.2;
              }
             .kartalet__text {
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 1.125em;
+                line-height: 1.2;
             }
             
             .kartalet__button
-            {font-size: 20px;
-                line-height: 24px;
+            {font-size: 1.25em;
+                line-height:1.2;
                 }
-    
         }
         @media (max-width:767px) {
             .block2-4{
@@ -322,8 +304,62 @@
         .kartalet2{
             display:none;
         }
-    
+        
+            .block2 {
+            font-size: 1em;
+            line-height: 1.2;
+            margin-top: 50px;
+            padding-top: 10px;
+            padding-bottom: 77px;
+            width: 90%;
+            }
+            .block3 {    
+                width: 90%;
+                padding-left: 19px;}
+            
+                .block3__img{width: 100%;}
+            .title {
+                    font-size: 1.125em;
+                     line-height: 1.2;
+                     
+                    }
+            .block4__caption{
+                padding-left: 22px;
+            }
+            .kartalet__number {   
+            
+                font-size: 1.125em;
+                line-height: 1;
+            
+            }
+            .kartalet1 
+            {   grid-area:kartalet1;
+                justify-self: end;
+                padding-left:0;
+                padding-right:0;
+                width: 90%;
+                height: auto;
+                margin: 0%;
+                }
+            
+            .kartalet__header{
+                font-size:1.25em;
+                line-height: 1.2;
+             }
+            .kartalet__text {
+                font-size: 1em;
+                line-height: 1.2;
+            }
+            .kartalet__img{
+                width: 100%;
+            }
+            .kartalet__button
+            {font-size: 1em;
+                line-height:1.2;
+                }
         }
+    
+        
 
     /* 5 блок - Сертификат на полёт */
 
@@ -499,69 +535,6 @@
 
         .block-title{
             font-size: 3em;
-            border:1px solid black;
-        }
-        .kartalet__img{
-            width: 100%;
-        }
-        .kartalet__button
-        {font-size: 20px;
-            line-height: 24px;
-            }
-    }
-    @media (max-width:1119px) and (min-width:768px)
-    {
-        .block2 {
-            font-size: 35px;
-        line-height: 1.2;
-            padding-top: 58px;
-            padding-bottom: 194px;
-        }
-        .block3 {    
-            width: 75%;
-            padding-left: 22px;}
-        
-        .title {
-                font-size: 36px;
-                 line-height: 1.2;
-                 font-size: 36px;
-                 line-height: 43px;
-                }
-        .block4__caption{
-            padding-left: 22px;
-        }
-        .kartalet__number {   
-        
-            font-size: 24px;
-            line-height: 25px;
-        
-        }
-        .kartalet1 
-        {   grid-area:kartalet1;
-            justify-self: end;
-            padding-right: 34.5pt;
-            width: 70%;
-            height: auto;
-            border:1px solid black;
-            margin: 0%;
-            
-        }
-        .kartalet2{
-            grid-area:kartalet2;
-            justify-self:start;
-            padding-left: 34.5pt;
-            width: 70%;
-            height: auto;
-            border:1px solid black;
-            margin: 0%;
-            
-        }
-        .kartalet__header-block{
-            border-radius: 1.875em 1.875em 0px 0px;
-            background:#6777FF;
-            width: 100%;
-            margin: 0%;
-            color: #03008D;
             border:1px solid black;
         }
     }
