@@ -691,6 +691,100 @@
 
 
     /* 8 блок - Наши инструктора */
+    .infobox__header {
+        font-family: 'Gilroy', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.188em;
+    
+        color: #03008D;
+    }
+    
+    .infobox__cards {
+    display: flex;
+    justify-content: space-around;
+    }
+    
+    .infobox__cards__card {
+    margin-right: 11px;
+    margin-left: 11px;
+    height: 413px;
+    width: 345px;
+    
+    background-color: #6777FF;
+    
+    border-radius: 15px;
+    }
+    
+    .infobox__cards__card1 {
+    margin-right: 11px;
+    margin-left: 240px;
+    height: 413px;
+    width: 345px;
+    
+    background-color: #6777FF;
+    
+    border-radius: 15px;
+    }
+    
+    .infobox__cards__card4 {
+    margin-right: 240px;
+    margin-left: 11px;
+    height: 413px;
+    width: 345px;
+    
+    background-color: #6777FF;
+    
+    border-radius: 15px;
+    }
+    
+    .infobox__cards__card__img {
+        border-radius: 20px;
+    }
+    
+    .infobox__cards__card__text_bold {
+        margin-left: 24px;
+    
+        font-family: 'Gilroy', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5em;
+    
+        color: white;
+    }
+    
+    .infobox__cards__card__text {
+        margin-left: 25px;
+    
+        font-family: 'Gilroy', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5em;
+    
+        color: white;
+    }
+    
+    .infobox__button {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .infobox__button__btn {
+        width: 724px;
+        height: 151px;
+        margin-top: 85px;
+    
+        font-family: 'Gilroy', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.188em;
+        
+        color: white;
+        background-color: #6777FF;
+        
+        border-radius: 15px;
+        border: none;
+    }
 
     /* 9 блок - Контакты и футер */
 
