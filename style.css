@@ -2,160 +2,419 @@
         display: grid;
         grid-template-rows: repeat(7, fit-content);
     }
+   
+   /* 1 блок - Header с навигацией */
 
-    /* 1 блок - Header с навигацией */
+   .main-header__navigation {
+    background-color: #6777FF;
+    color: #FFFFFF;
+   }
 
-    .main-header__navigation {
-        background-color: #6777FF;
-        color: #FFFFFF;
-    }
+   .main-header__body__title__first-word,
+   .main-header__body__title__fourth-word {
+    color: #6777FF;
+   }
+
+   .main-header__body__gift-certificate {
+    background-color: #E5E5E5;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+   }
+
+   .main-header__body__gift-certificate__subtitle {
+    background-color: #6777FF;
+
+    grid-column: 1 / 3;
+   }
 
     /* 2 блок - Авиатренажёры Boeing 737... */
 
     /* 3 блок - Что такое авиатренажёр? */
 
     /* 4 блок - Куда можно лететь? */
-    @font-face {
-        font-family: 'Gilroy-Medium';
-        src: url('fonts/gilroy-medium.eot');
-        /* IE 9 Compatibility Mode */
-        src: url('fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'),
-            /* IE < 9 */
-            url('fonts/gilroy-medium.woff2') format('woff2'),
-            /* Super Modern Browsers */
-            url('fonts/gilroy-medium.woff') format('woff'),
-            /* Firefox >= 3.6, any other modern browser */
-            url('fonts/gilroy-medium.ttf') format('truetype'),
-            /* Safari, Android, iOS */
-            url('fonts/gilroy-medium.svg#gilroy-medium') format('svg');
-        /* Chrome < 4, Legacy iOS */
-        font-family: 'Liquid Crystal Display';
-        src: url('fonts/liquid_crystal_display.eot');
-        /* IE 9 Compatibility Mode */
-        src: url('fonts/liquid_crystal_display.eot?#iefix') format('embedded-opentype'),
-            /* IE < 9 */
-            url('fonts/liquid_crystal_display.woff2') format('woff2'),
-            /* Super Modern Browsers */
-            url('fonts/liquid_crystal_display.woff') format('woff'),
-            /* Firefox >= 3.6, any other modern browser */
-            url('fonts/liquid_crystal_display.ttf') format('truetype'),
-            /* Safari, Android, iOS */
-            url('fonts/liquid_crystal_display.svg#liquid_crystal_display') format('svg');
-        /* Chrome < 4, Legacy iOS */
-    }
-
-    @import url(https://allfont.net/allfont.css?fonts=liquid-crystal-display);
-
-    .block4 {
+    .block2-4{
         display: grid;
-        grid-template-areas: "header header"
-            "data data"
-            "kartalet1 kartalet2";
+        grid-template-areas: "block2 block2"
+                             "block3 block3"
+                             "block4__caption block4__caption"
+                             "kartalet1 kartalet2";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto 9.375em;
-        border: 1px solid black;
+        grid-template-rows:auto auto auto auto;
+        background: url(img-block2/linii.svg);
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size:100%;
+        margin:0px;
+        padding:0px;
     }
-
-    .header {
-        grid-area: header;
-        justify-self: start;
-        padding: 2em;
-        font-family: Acrom, Sans-Serif;
-        margin: 0%;
+    .block2 {
+        grid-area:block2;
+        justify-self: center;
+        width:75%;
+        text-align: center;
+        font-family: 'Gilroy', Arial, sans-serif;
         font-style: normal;
-        font-weight: 700;
-        font-size: 4em;
+        font-weight: 800;
+        font-size: 4.3125em;
         line-height: 1.2;
+        text-align: center;
         text-transform: uppercase;
+        color: #000000;
+        background: url(img-block2/blok2__img.svg);
+        background-repeat: no-repeat;
+        background-position:center top 0px;
+        background-size:75%;
+        padding-top: 35px;
+        padding-bottom: 238px;
+    }
+    .block2__selection{
+        color: #6777FF;
+    } 
+    .block3 {    
+        grid-area:block3;
+        width:66%;
+        padding-left: 238px;}
+    
+    .block3__img{width: 100%;}
+    .title {
+        font-family: 'Acrom', Arial, sans-serif;
+            margin: 0%;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4em;
+             line-height: 1.2;
+            text-transform: uppercase;
+            color: #03008D;}
+    .block4__caption{
+        grid-area:block4__caption;
+        justify-self: start;
+        width: 66%;
+        padding-left: 238px;
+    }
+    .block4__selection{
         color: #03008D;
     }
-
-    .data {
-        grid-area: data;
+    .kartalet__number{   
+        grid-area:data;
         justify-self: start;
-        padding: 2em;
         font-family: 'Liquid Crystal Display', arial;
         font-style: normal;
         font-weight: 400;
         font-size: 36px;
         line-height: 37px;
         margin: 0%;
-        color: #03008D;
-    }
-
-    .kartalet1 {
-        grid-area: kartalet1;
+        color:#6777FF;;
+        padding-top:2em;
+        padding-bottom:2em;
+        }
+    .kartalet__link {text-decoration: none;}
+    .kartalet1 
+    {   grid-area:kartalet1;
         justify-self: end;
         padding-right: 34.5pt;
         width: 70%;
         height: auto;
-        border: 1px solid black;
         margin: 0%;
-
+        
     }
-
-    .kartalet2 {
-        grid-area: kartalet2;
-        justify-self: start;
+    .kartalet2{
+        grid-area:kartalet2;
+        justify-self:start;
         padding-left: 34.5pt;
         width: 70%;
         height: auto;
-        border: 1px solid black;
         margin: 0%;
-
     }
-
-    .kartalet__header-block {
+    .kartalet__header-block{
         border-radius: 1.875em 1.875em 0px 0px;
-        background: #6777FF;
+        background:#6777FF;
         width: 100%;
         margin: 0%;
-    }
-
-    .kartalet__header {
+        }
+    .kartalet__header{
         margin: 0%;
         padding-left: 29.25pt;
-        padding-top: 21pt;
+        padding-top:21pt;
         padding-bottom: 20.25pt;
-        font-family: 'Acrom', Sans-Serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36pt;
-        line-height: 1.2;
-        text-transform: uppercase;
-        color: #FFFFFF;
-    }
-
+        font-family: 'Acrom', Arial, sans-serif;;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.25em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #FFFFFF;
+     }
     .kartalet__text {
-        font-family: 'Gilroy-Medium', Sans-Serif;
+        font-family: 'Gilroy', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size:1.5em;
+    line-height: 1.2;
+    margin:0%;
+    color: #000000;
+    padding-top: 35.25pt;
+    padding-bottom: 15.75pt;
+    }
+    .kartalet__img{
+        width: 100%;
+    }
+    .kartalet__button
+    {font-family: 'Gilroy', Arial, sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 1.5em;
         line-height: 1.2;
-        margin: 0%;
-        color: #000000;
-        padding-top: 35.25pt;
-        padding-bottom: 15.75pt;
-    }
-
-    .kartalet__img {
-        width: 100%;
-    }
-
-    .kartalet__button {
-        font-family: 'Gilroy-Medium', Sans-Serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
-        color: #FFFFFF;
-        background: #6777FF;
-        border-radius: 100px;
-        padding: 6.75pt 27.75pt 6.75pt 27.75pt;
-        text-decoration: none;
-    }
+         color: #FFFFFF;
+         background: #6777FF;
+         border-radius: 100px;
+         padding: 6.75pt 27.75pt 6.75pt 27.75pt;
+         text-decoration: none;
+        }
+        @media (max-width:1366px) and (min-width:1120px)
+        {
+            .block2 {
+            font-size: 3em;
+            line-height: 1.2;
+                padding-top: 58px;
+                padding-bottom: 194px;
+            }
+            .block3 {    
+                width: 75%;
+                padding-left: 123px;}
+            
+                .block3__img{width: 100%;}
+            .title {
+                    font-size: 3em;
+                     line-height: 1.2;
+                     
+                    }
+            .block4__caption{
+                padding-left: 123px;
+            }
+            .kartalet__number {   
+            
+                font-size: 2.25em;
+                line-height: 1;
+            
+            }
+            .kartalet1 
+            {   grid-area:kartalet1;
+                justify-self: end;
+                padding-right: 34.5pt;
+                width: 70%;
+                height: auto;
+                margin: 0%;
+                
+            }
+            .kartalet2{
+                grid-area:kartalet2;
+                justify-self:start;
+                padding-left: 34.5pt;
+                width: 70%;
+                height: auto;
+                margin: 0%;
+                
+            }
+            .kartalet__header{
+                font-size: 2.25em;
+                line-height: 1.2;
+             }
+            .kartalet__text {
+                font-size: 2.25em;
+                line-height: 1.2;
+            }
+            .kartalet__img{
+                width: 100%;
+            }
+            .kartalet__button
+            {font-size: 1.5em;
+                line-height:1.2;
+                }
+        }
+        @media (max-width:1119px) and (min-width:768px)
+        {
+            .block2 {
+            font-size: 2.1875em;
+            line-height: 1.2;
+               margin-top: 40px;
+                padding-top: 30px;
+                padding-bottom: 128px;
+                width: 90%;
+            }
+            .block3 {    
+                width: 89%;
+                padding-left: 38px;}
+            
+                .block3__img{width: 100%;}
+            .title {
+                    font-size: 2.1875em;
+                     line-height: 1.2;
+                     
+                    }
+            .block4__caption{
+                padding-left: 22px;
+            }
+            .kartalet__number {   
+            
+                font-size: 2.1875em;
+                line-height: 1;
+            
+            }
+            .kartalet1 
+            {   grid-area:kartalet1;
+                justify-self: end;
+                padding-right:13px;
+                width: 90%;
+                height: auto;
+                margin: 0%;
+                
+            }
+            .kartalet2{
+                grid-area:kartalet2;
+                justify-self:start;
+                padding-left: 13px;
+                width: 90%;
+                height: auto;
+                margin: 0%;
+                border: 0px;
+                
+            }
+            .kartalet__header{
+                font-size: 1.625em;
+                line-height: 1.2;
+             }
+            .kartalet__text {
+                font-size: 1.125em;
+                line-height: 1.2;
+            }
+            
+            .kartalet__button
+            {font-size: 1.25em;
+                line-height:1.2;
+                }
+        }
+        @media (max-width:767px) {
+            .block2-4{
+                grid-template-areas: "block2 block2"
+                                     "block3 block3"
+                                     "block4__caption block4__caption"
+                                     " kartalet1 kartalet1"}
+        .kartalet2{
+            display:none;
+        }
+        
+            .block2 {
+            font-size: 1em;
+            line-height: 1.2;
+            margin-top: 50px;
+            padding-top: 10px;
+            padding-bottom: 77px;
+            width: 90%;
+            }
+            .block3 {    
+                width: 90%;
+                padding-left: 19px;}
+            
+                .block3__img{width: 100%;}
+            .title {
+                    font-size: 1.125em;
+                     line-height: 1.2;
+                     
+                    }
+            .block4__caption{
+                padding-left: 22px;
+            }
+            .kartalet__number {   
+            
+                font-size: 1.125em;
+                line-height: 1;
+            
+            }
+            .kartalet1 
+            {   grid-area:kartalet1;
+                justify-self: end;
+                padding-left:0;
+                padding-right:0;
+                width: 90%;
+                height: auto;
+                margin: 0%;
+                }
+            
+            .kartalet__header{
+                font-size:1.25em;
+                line-height: 1.2;
+             }
+            .kartalet__text {
+                font-size: 1em;
+                line-height: 1.2;
+            }
+            .kartalet__img{
+                width: 100%;
+            }
+            .kartalet__button
+            {font-size: 1em;
+                line-height:1.2;
+                }
+        }
+    
+        
 
     /* 5 блок - Сертификат на полёт */
+
+.certificate-block {
+    background-image: url(assets/images/section-5/background-lines.png);
+}
+
+    /* .certificate-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fit-content 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    
+        width: 50%;
+        height: 50%;
+        border-radius: 30px;
+        margin-top: 20px;
+    
+        background-color: #E5E5E5;
+    }
+    
+    .certificate-block__gift-certificate__subtitle {
+        grid-column: 1 / 3;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    
+        background-color: #6777FF;
+        color: white;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-weight: 700;
+        font-size: 39px;
+        line-height: 47px;  
+    }
+    
+    .certificate-block__gift-certificate__price {
+        color: #03008D;;
+    }
+    
+    .certificate-block__gift-certificate__time-60 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    
+    .certificate-block__gift-certificate__time-120 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    
+    .certificate-block__gift-certificate__price,
+    .certificate-block__gift-certificate__time {
+        font-weight: 800;
+        font-size: 47px;
+        line-height: 56px;
+    } */
 
     /* 6 блок - Чем отличается Boeing от Airbus? */
 
@@ -439,6 +698,204 @@
         list-style-type: none;
     }
 
+.wrapper-text{
+    font-size: 64px;
+    color:#03008D;
+    border:1px solid black;
+}
+
+.wrapper-cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    background-color: #E5E5E5;
+    width:465px;
+    border-radius: 30px;
+    padding-bottom:56px;
+    margin-top: 30px;
+    margin-left: 23px;
+    margin-bottom: 20px;
+}
+
+.card-img{
+    width:403px;
+    height: 355px; 
+    margin: 24px 30px 27px;
+    border: 1px solid black;
+}
+
+.card-sub{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    width: 403px; 
+    margin: 24px 30px 27px;
+    border: 1px solid black;  
+}
+
+.down-text{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    border: 1px solid black;  
+    justify-content: space-between;
+}
+
+.number1{
+    font-size: 36px;
+    color: #03008D;
+    text-decoration: none;
+
+}
+.number{
+    font-size: 36px;
+    color: #03008D;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+
+@media (max-width:1920px) and (min-width:1532px){
+    .wrapper{
+        margin:6379px 237px 243px;
+    }
+
+    .wrapper-cards{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .wrapper-text{
+        font-size: 64px;
+        color:#03008D;
+        border: 1px solid black;
+    }
+
+    .wrapper-cards{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .card{
+        background-color: #E5E5E5;
+        width:465px;
+        border-radius: 30px;
+        padding-bottom:56px;
+        margin-top: 30px;
+        /* margin-left: 23px; */
+        margin-bottom: 20px;
+    }
+
+    .card-img{
+        width:403px;
+        height: 355px; 
+        margin: 24px 30px 27px;
+        border: 1px solid black;
+    }
+    
+    .card-sub{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        width: 403px; 
+        margin: 24px 30px 27px;
+        border: 1px solid black;  
+    }
+    
+    .down-text{
+        display: flex;
+        align-items: center;
+        width: 250px;
+        border: 1px solid black;  
+        justify-content: space-between;
+    }
+    
+    .number1{
+        font-size: 36px;
+        color: #03008D;
+        text-decoration: none;
+    
+    }
+    .number{
+        font-size: 36px;
+        color: #03008D;
+        text-decoration: none;
+        opacity: 0.6;
+    }
+    
+}
+
+@media (max-width:1366px) and (min-width:1120px){
+   .wrapper-text{
+        font-size: 48px;
+        color:#03008D;
+        border: 1px solid black;
+    }
+    
+    .wrapper-cards{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .card{
+        background-color: #E5E5E5;
+        width:360px;
+        border-radius: 30px;
+        padding-bottom:56px;
+        margin-top: 30px;
+        /* margin-left: 23px; */
+        margin-bottom: 20px;
+    }
+    
+    .card-img{
+        width:313px;
+        height: 355px; 
+        margin: 27px 19px 20px;
+        border: 1px solid black;
+    }
+    
+    .card-sub{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        width: 332px; 
+        margin: 24px 30px 27px;
+        border: 1px solid black;  
+    }
+    
+    .down-text{
+        display: flex;
+        align-items: center;
+        width: 250px;
+        border: 1px solid black;  
+        justify-content: space-between;
+    }
+    
+    .number1{
+        font-size: 36px;
+        color: #03008D;
+        text-decoration: none;
+    
+    }
+    .number{
+        font-size: 36px;
+        color: #03008D;
+        text-decoration: none;
+        opacity: 0.6;
+    }
+
+}
+
+    /* 8 блок - Наши инструктора */
+
+    /* 9 блок - Контакты и футер */
+
+    li {
+        list-style-type: none;
+    }
+
     .footer {
         min-width: 360px;
         max-width: 1925px;
@@ -521,24 +978,52 @@
         grid-area: networks;
     }
 
-    .item-social__facebook,
-    .item-social__tiktok,
-    .item-social__vkontakte,
     .item-social__inst {
+        background-image: url(img/footer/Instagram.png);
+        min-width: 50px;
+        min-height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
         width: 58px;
-        height: 57px;
+        min-height: 57px;
         border: 3px solid white;
         border-radius: 16px;
     }
 
-    .footer-icon {
-        display: flex;
-        justify-content: center;
-        transform: translateY(7px);
+    .item-social__facebook {
+        background: url(img/footer/f.png) no-repeat center center;
+        min-width: 50px;
+        min-height: auto;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        width: 58px;
+        min-height: 57px;
+        border: 3px solid white;
+        border-radius: 16px;
     }
 
-    .icon-vk {
-        transform: translateY(15px);
+    .item-social__tiktok {
+        background: url(img/footer/TikTok.png) no-repeat center center;
+        min-width: 50px;
+        min-height: auto;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        width: 58px;
+        min-height: 57px;
+        border: 3px solid white;
+        border-radius: 16px;
+    }
+
+    .item-social__vkontakte {
+        background: url(img/footer/VK.png) no-repeat center center;
+        min-width: 50px;
+        min-height: auto;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        width: 58px;
+        min-height: 57px;
+        border: 3px solid white;
+        border-radius: 16px;
     }
 
     .item-social {
@@ -564,10 +1049,7 @@
     }
 
     .address,
-    .mail,
-    .telepfone,
     .logo,
-    .subscribe,
     .networks {
         margin-bottom: 15px;
     }
@@ -631,7 +1113,6 @@
             display: flex;
             justify-content: center;
             padding: 0;
-            background-size: contain;
         }
 
         .item__text {
@@ -642,5 +1123,17 @@
         .item-social {
             justify-content: space-between;
             padding: 0 200px 0 0;
+        }
+
+        .item__logo {
+            width: 180px;
+        }
+
+        .item-social__inst,
+        .item-social__facebook,
+        .item-social__tiktok,
+        .item-social__vkontakte {
+            width: 78px;
+            height: 77px;
         }
     }
