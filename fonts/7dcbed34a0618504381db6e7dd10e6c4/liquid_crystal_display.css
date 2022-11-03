@@ -1,9 +1,0 @@
-@font-face {
-	font-family: 'Liquid Crystal Display';
-	src: url('../fonts/liquid_crystal_display.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/liquid_crystal_display.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/liquid_crystal_display.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/liquid_crystal_display.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/liquid_crystal_display.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/liquid_crystal_display.svg#liquid_crystal_display') format('svg'); /* Chrome < 4, Legacy iOS */
-}
