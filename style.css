@@ -1393,14 +1393,14 @@
         padding-bottom: 238px;
         grid-area: text6;
     }
-    p {width: 75vh;
+    /* p {width: 75vh;
         line-height: 29px;}
     ul {
         list-style-image: url("img/Rectangle\ 36\ \(1\).png");
     }
     li {
         margin-bottom: 0.5em;
-    }
+    } */
     .list2 {
         direction: rtl;
         float: left;}
