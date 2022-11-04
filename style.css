@@ -469,7 +469,6 @@
     .card1{
         grid-area: card1;
         justify-self: end;
-        margin-left: 18%;
         height: auto;
         margin: 0%;
         border-radius: 1em;
@@ -483,7 +482,6 @@
         justify-self: center;
         margin-left:0%;
         height: auto;
-        /* margin: 0%; */
         background-color: #E5E5E5;
         border:1px solid black;
     }
@@ -491,9 +489,7 @@
     .card3{
         grid-area: card3;
         justify-self: end;
-        /* margin-right: 20%; */
         height: auto;
-        /* margin: 0%; */
         border-radius: 1em;
         background-color: #E5E5E5;
         border:1px solid black;
@@ -518,18 +514,18 @@
         width: 30%;
     }
     
-    .number1{
+    .numbers__number1{
         text-decoration: none;
     
     }
-    .number{
+    .numbers__number{
         color: #03008D;
         text-decoration: none;
-        opacity: 0.6;
+        opacity: 0.4;
     }
     
     
-    @media(max-width:1366px) {
+    @media(max-width:1366px) and (min-width:1120px){
         .block7{
             margin-top:6139px;
         }
@@ -543,12 +539,11 @@
             font-size: 1.25em;
             line-height: 1.2;
             text-align:justify;
-            /* text-justify: auto; */
             border:1px solid black;
         }
     }
     
-    @media (max-width:769px) and (min-width:320px){
+    @media (max-width:1119px) and (min-width:768px){
         .block7{
             display: grid;
             grid-template-areas: "block-title block-title"
@@ -560,8 +555,8 @@
             column-gap: 1em;
             margin: 10%;
             margin-top: 4363px;
-
         }
+
         .block-title{
             grid-area: block-title;
             justify-self: start;
@@ -574,21 +569,16 @@
         }
     
         .card__text{
-            font-size: 27px;
+            font-size: 1.7em;
             padding: 3%;
-            /* height: 351px; */
             line-height: 1.2;
             text-align:justify;
-            /* text-justify: auto; */
             border:1px solid black;
         }
     
         .card1{
             grid-area: card1;
             justify-self: end;
-            margin-left: 18%;
-            /* height: 631px; */
-            /* height: auto; */
             margin: 0%;
             border-radius: 1em;
             border:1px solid black;
@@ -599,8 +589,6 @@
             border-radius: 1em;
             justify-self: center;
             margin-left:0%;
-            /* height: 631px; */
-            /* height: auto; */
             border:1px solid black;
         }
     
@@ -613,7 +601,7 @@
             justify-self: start;
             padding-left:0%;
             font-weight: 400;
-            font-size: 24px;
+            font-size: 1.5em;
             line-height: 1.2;
             margin: 0%;
             color: #03008D;
@@ -622,7 +610,7 @@
         }
     }
     
-    @media (max-width:320px){
+    @media (max-width:767px){
         .block7{
             display: grid;
             grid-template-areas: "block-title"
@@ -632,7 +620,6 @@
             grid-template-rows:auto auto auto auto;
             border: 1px solid black;
             column-gap: 1em;
-            /* margin: 10%; */
             margin:auto 10%;
             margin-top: 3648px;
             
@@ -644,26 +631,21 @@
             padding-left:0%;
             margin: 0%;
             font-weight: 700;
-            font-size: 48px;
+            font-size: 3em;
             line-height: 1.2;
             border:1px solid black;
         }
 
         .card__text{
-            font-size: 48px;
-    
-            /* font-size: 1em; */
+            font-size: 3em;
             line-height: 1;
             text-align:justify;
-            /* text-justify: auto; */
             border:1px solid black;
         }
     
         .card1{        
             grid-area: card1;
             justify-self: end;
-            margin-left: 18%;
-            /* height: auto; */
             margin: 0%;
             border-radius: 1em;
             border:1px solid black;
@@ -677,14 +659,12 @@
             grid-area: numbers;
             padding-left:0%;
             font-weight:700;
-            font-size: 48px;
-            /* font-size: 1.125em; */
+            font-size: 3em;
             line-height: 1.2em;
             margin: 0%;
             width: 100%;
             border:1px solid black;
         }
-
     }
 
 
