@@ -1659,6 +1659,11 @@
 
 
     /* 8 блок - Наши инструктора */
+    @font-face {
+        font-family: 'Gilroy', Arial, sans-serif;;
+        src: url();
+    }
+    
     .infobox__header {
         margin-left: 10%;
     
@@ -1762,6 +1767,63 @@
         
         border-radius: 15px;
         border: none;
+    }
+    
+    @media (min-width:1120px) {
+        .slider {
+            display: none;
+        }
+    }
+    
+    @media (max-width:1119px) and (min-width:376px) {
+    .infobox__cards__card4 {
+        display: none;
+    }
+    
+    .slider {
+        margin-top: 90px;
+        margin-left: 10%;
+    }
+    
+    .arrow {
+        color: #03008D;
+    }
+    }
+    
+    @media (max-width:375px) {
+        .infobox__header {
+            font-size: 1.125em;
+            margin-left: 0;
+        }
+        .infobox__cards {
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        .infobox__cards__card1 {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .infobox__cards__card {
+            display: none;
+        }
+    
+        .infobox__cards__card4 {
+            display: none;
+        }
+    
+        .infobox__button__btn {
+            width: 100%;
+            height: auto;
+    
+            font-family: 'Gilroy', Arial, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.5em;
+        }
     }
     /* 9 блок - Контакты и футер */
 
