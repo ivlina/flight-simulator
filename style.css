@@ -16,6 +16,11 @@
             color: white;
             font-family: 'Gilroy', Arial, sans-serif;
         }
+
+        .navigation__choice {
+            color: white;
+            text-decoration: none;
+        }
     
     @media (min-width: 1440px) and (max-width: 1920px) {
         .header__navigation {
@@ -254,7 +259,7 @@
         .header__picture {
             position: absolute;
             right: -5px;
-            top: -100px;
+            top: -70px;
             width: 60%;
             z-index: 0;
         }
@@ -1348,7 +1353,7 @@
     } */
 
     /* 6 блок - Чем отличается Boeing от Airbus? */
-    .bl6 {
+    /* .bl6 {
         font-size: 48px;
         color: #03008D;}
     .block6 {
@@ -1393,17 +1398,17 @@
         padding-bottom: 238px;
         grid-area: text6;
     }
-    /* p {width: 75vh;
+    p {width: 75vh;
         line-height: 29px;}
     ul {
         list-style-image: url("img/Rectangle\ 36\ \(1\).png");
     }
     li {
         margin-bottom: 0.5em;
-    } */
+    }
     .list2 {
         direction: rtl;
-        float: left;}
+        float: left;} */
 
     /* 7 блок - Отзывы наших гостей */
     .block7 {
