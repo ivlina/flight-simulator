@@ -621,7 +621,6 @@
         .gift-certificate__row-with-border {
             border-bottom: 1px solid black;
         }
-
     }
 
     /* 2 блок - Авиатренажёры Boeing 737...
@@ -1019,7 +1018,7 @@
 
     /* 5 блок - Сертификат на полёт */
 
-    @media (min-width: 1440px) and (max-width: 1920px) {
+    /* @media (min-width: 1440px) and (max-width: 1920px) {
         .certificate-block {
             background-image: url(assets/images/section-5/background-cloud.png);
             background-repeat: no-repeat;
@@ -1346,7 +1345,7 @@
         .gift-certificate-2__row-with-border {
             border-bottom: 1px solid black;
         }
-    }
+    } */
 
     /* 6 блок - Чем отличается Boeing от Airbus? */
     .bl6 {
