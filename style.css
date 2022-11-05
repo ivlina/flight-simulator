@@ -641,7 +641,7 @@
             "kartalet1 kartalet2";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto auto;
-        background: url(img-block2/linii.svg);
+        background: url(assets/images/img-block2/linii.svg);
         width: 100vw;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -662,7 +662,7 @@
         text-align: center;
         text-transform: uppercase;
         color: #000000;
-        background: url(img-block2/blok2__img.svg);
+        background: url(assets/images/img-block2/blok2__img.svg);
         background-repeat: no-repeat;
         background-position: center top 0px;
         background-size: 75%;
@@ -693,6 +693,7 @@
         line-height: 1.2;
         text-transform: uppercase;
         color: #03008D;
+        padding-bottom: 1em;
     }
 
     .block4__caption {
@@ -700,29 +701,30 @@
         justify-self: start;
         width: 66%;
         padding-left: 238px;
+        padding-bottom: 1em;
     }
 
     .block4__selection {
         color: #03008D;
     }
 
-    .kartalet__number {
-        grid-area: data;
+    
+    .kartalet__link:hover{
+        color: #03008D;
+    }
+    .kartalet__link {
+        text-decoration: none;
         justify-self: start;
         font-family: 'LCD Display Grid', arial;
         font-style: normal;
         font-weight: 400;
-        font-size: 36px;
-        line-height: 37px;
+        font-size: 1em;
+        line-height: 1.2;
         margin: 0%;
         color: #6777FF;
         ;
-        padding-top: 2em;
+        padding-top: 3em;
         padding-bottom: 2em;
-    }
-
-    .kartalet__link {
-        text-decoration: none;
     }
 
     .kartalet1 {
@@ -794,6 +796,9 @@
         padding: 6.75pt 27.75pt 6.75pt 27.75pt;
         text-decoration: none;
     }
+    .kartalet__button:hover{
+        background: #03008D;
+    }
 
     @media (max-width:1366px) and (min-width:1120px) {
         .block2 {
@@ -822,7 +827,7 @@
             padding-left: 123px;
         }
 
-        .kartalet__number {
+        .kartalet__link {
 
             font-size: 2.25em;
             line-height: 1;
@@ -850,7 +855,7 @@
         }
 
         .kartalet__header {
-            font-size: 2.25em;
+            font-size: 2em;
             line-height: 1.2;
         }
 
@@ -898,9 +903,9 @@
             padding-left: 22px;
         }
 
-        .kartalet__number {
+        .kartalet__link {
 
-            font-size: 2.1875em;
+            font-size: 1em;
             line-height: 1;
 
         }
@@ -982,9 +987,9 @@
             padding-left: 22px;
         }
 
-        .kartalet__number {
+        .kartalet__link{
 
-            font-size: 1.125em;
+            font-size: 1em;
             line-height: 1;
 
         }
