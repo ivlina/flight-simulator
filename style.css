@@ -22,7 +22,7 @@
             text-decoration: none;
         }
     
-    @media (min-width: 1440px) and (max-width: 1920px) {
+    @media (min-width: 1440px) {
         .header__navigation {
             padding: 2em 9em;
         }
@@ -156,7 +156,7 @@
         display: none;
     }
     
-    @media (min-width: 1440px) and (max-width: 1920px) {
+    @media (min-width: 1440px) {
         .header__body {
             padding-left: 9em;
             position: relative;
@@ -260,7 +260,8 @@
             position: absolute;
             right: -5px;
             top: -70px;
-            width: 60%;
+            /* width: 60%; */
+            height: 100%;
             z-index: 0;
         }
 
@@ -378,7 +379,8 @@
             position: absolute;
             right: 0;
             top: 2em;
-            width: 60%;
+            /* width: 60%; */
+            height: 100%;
             z-index: 0;
         }
 
@@ -1028,31 +1030,46 @@
 
     /* 5 блок - Сертификат на полёт */
 
-    /* @media (min-width: 1440px) and (max-width: 1920px) {
+    .certificate-block__subtitle {
+        font-family: 'Gilroy', Arial, sans-serif;
+    }
+
+    .ccertificate-block-2__gift-certificate {
+        font-family: 'Acrom', Arial, sans-serif;
+    }
+
+    @media (min-width: 1440px){
+
         .certificate-block {
             background-image: url(assets/images/section-5/background-cloud.png);
             background-repeat: no-repeat;
             background-size: cover;
+
+            position: relative;
+            height: 1276.17px;
         }
-        
-        .certificate-block__father-and-son {
-            position: absolute;
-            height: 110vh;
-            z-index: 2;
-        }
-        
+
         .certificate-block__text {
             margin-left: 50%;
-            margin-top: 24vh;
-            margin-bottom: 40vh;
-    
+            padding-top: 20em;
+
             position: relative;
             z-index: 1;
         }
-        
+
+        .certificate-block__father-and-son {
+            position: absolute;
+            height: 75em;
+            z-index: 2;
+            left: 0em;
+        }
+
         .certificate-block__subtitle {
             color: white;
             font-size: 2.1em;
+            
+            position: relative;
+            z-index: 1;
         }
 
         .certificate-block-2__gift-certificate {
@@ -1070,7 +1087,7 @@
             position: relative;
             z-index: 2;
         }
-        
+
         .gift-certificate-2__subtitle {
             width: 100%;
             text-align: center;
@@ -1082,7 +1099,7 @@
             font-weight: 700;
             font-size: 1.5em;
         }
-        
+
         .gift-certificate-2__row {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1106,34 +1123,135 @@
         .gift-certificate-2__row-with-border {
             border-bottom: 1px solid black;
         }
-    }
+
+        .certificate-block-mobile__father-and-son {
+            display: none;
+        }
+
+    } 
     
     @media (min-width: 1120px) and (max-width: 1440px) {
         .certificate-block {
             background-image: url(assets/images/section-5/background-cloud.png);
             background-repeat: no-repeat;
             background-size: cover;
+
+            position: relative;
+            height: 840px;
         }
-        
-        .certificate-block__father-and-son {
-            position: absolute;
-            height: 100vh;
-            z-index: 2;
-        }
-        
+
         .certificate-block__text {
             margin-left: 50%;
-            margin-top: 24vh;
-            margin-bottom: 40vh;
-            margin-right: 10px;
-    
+            padding-top: 10em;
+
             position: relative;
             z-index: 1;
         }
-        
+
+        .certificate-block__father-and-son {
+            position: absolute;
+            height: 50em;
+            z-index: 2;
+            left: 3em;
+        }
+
         .certificate-block__subtitle {
             color: white;
             font-size: 1.7em;
+            
+            position: relative;
+            z-index: 1;
+        }
+
+        .certificate-block-2__gift-certificate {
+            display: grid;
+            grid-template-rows: 0.5fr 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+        
+            width: 40vw;
+            border-radius: 30px;
+            margin-top: 1.5em;
+            margin-right: 1em;
+        
+            background-color: #E5E5E5;
+    
+            position: relative;
+            z-index: 2;
+        }
+        
+        .gift-certificate-2__subtitle {
+            width: 100%;
+            text-align: center;
+        
+            background-color: #6777FF;
+            color: white;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+        
+        .gift-certificate-2__row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .gift-certificate-2__price {
+            color: #03008D;;
+            padding-left: 2em;
+        }
+        
+        .gift-certificate-2__time {
+            padding-right: 2em;
+        }
+        
+        .gift-certificate-2__price,
+        .gift-certificate-2__time {
+            font-weight: 800;
+            font-size: 2em;
+        }
+        
+        .gift-certificate-2__row-with-border {
+            border-bottom: 1px solid black;
+        }
+
+        .certificate-block-mobile__father-and-son {
+            display: none;
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1120px) {
+        .certificate-block {
+            background-image: url(assets/images/section-5/background-cloud.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            position: relative;
+            height: 540px;
+        }
+
+        .certificate-block__text {
+            margin-left: 40%;
+            padding-top: 2em;
+
+            position: relative;
+            z-index: 1;
+        }
+
+        .certificate-block__father-and-son {
+            position: absolute;
+            height: 100%;
+            z-index: 0;
+            left: 2em;
+        }
+
+        .certificate-block__subtitle {
+            color: #03008D;
+            font-size: 1.2em;
+            
+            position: relative;
+            z-index: 1;
         }
 
         .certificate-block-2__gift-certificate {
@@ -1144,7 +1262,7 @@
         
             width: 50vw;
             border-radius: 30px;
-            margin-top: 1.5em;
+            margin-top: 1em;
             margin-right: 1em;
         
             background-color: #E5E5E5;
@@ -1161,7 +1279,7 @@
             color: white;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
-            font-weight: 700;
+            font-weight: 600;
             font-size: 1.5em;
         }
         
@@ -1172,108 +1290,29 @@
         
         .gift-certificate-2__price {
             color: #03008D;;
-            padding-left: 2em;
+            padding-left: 1em;
         }
         
         .gift-certificate-2__time {
-            padding-right: 2em;
+            padding-right: 1em;
         }
         
         .gift-certificate-2__price,
         .gift-certificate-2__time {
-            font-weight: 800;
-            font-size: 2em;
-        }
-        
-        .gift-certificate-2__row-with-border {
-            border-bottom: 1px solid black;
-        }
-    }
-    
-    @media (min-width: 768px) and (max-width: 1120px) {
-        .certificate-block {
-            background-image: url(assets/images/section-5/background-cloud.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        .certificate-block__father-and-son {
-            position: absolute;
-            height: 125vh;
-            left: 10em;
-            z-index: 2;
-        }
-        
-        .certificate-block__text {
-            margin-left: 50%;
-            margin-top: 24vh;
-            margin-bottom: 40vh;
-            margin-right: 10px;
-    
-            position: relative;
-            z-index: 1;
-        }
-        
-        .certificate-block__subtitle {
-            color: white;
-            font-size: 1.7em;
-        }
-
-        .certificate-block-2__gift-certificate {
-            display: grid;
-            grid-template-rows: 0.5fr 1fr 1fr 1fr;
-            justify-items: center;
-            align-items: center;
-        
-            width: 70vw;
-            border-radius: 30px;
-            margin-top: 1.5em;
-            margin-right: 1em;
-        
-            background-color: #E5E5E5;
-    
-            position: relative;
-            z-index: 2;
-        }
-        
-        .gift-certificate-2__subtitle {
-            width: 100%;
-            text-align: center;
-        
-            background-color: #6777FF;
-            color: white;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
             font-weight: 700;
-            font-size: 1.5em;
-        }
-        
-        .gift-certificate-2__row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        
-        .gift-certificate-2__price {
-            color: #03008D;;
-            padding-left: 2em;
-        }
-        
-        .gift-certificate-2__time {
-            padding-right: 2em;
-        }
-        
-        .gift-certificate-2__price,
-        .gift-certificate-2__time {
-            font-weight: 800;
             font-size: 2em;
         }
         
         .gift-certificate-2__row-with-border {
             border-bottom: 1px solid black;
         }
+
+        .certificate-block-mobile__father-and-son {
+            display: none;
+        }
     }
 
-    @media (min-width: 320px) and (max-width: 768px) {
+    @media (max-width: 768px) {
 
         .certificate-block {
             margin-left: 1em;
@@ -1282,26 +1321,30 @@
 
         .certificate-block__subtitle {
             color: #03008D;
-            font-size: 64px;
+            font-size: 2.7em;
             word-wrap: normal;
         }
 
         .certificate-block__text {
             position: relative;
-            z-index: 1;
-            
+            z-index: 1; 
         }
 
         .certificate-block {
-            background-image: url(assets/images/section-5/background-cloud.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-
             position: relative;
         }
 
         .certificate-block__father-and-son {
             display: none;
+        }
+
+        .certificate-block-mobile__father-and-son {
+            background-image: url(assets/images/section-5/background-cloud.png);
+            background-repeat: no-repeat;
+            background-size: 100% 130%;
+
+            width: 100%;
+            margin-bottom: -20px;
         }
 
         .certificate-block-2__gift-certificate {
@@ -1329,7 +1372,7 @@
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
             font-weight: 700;
-            font-size: 1.5em;
+            font-size: 2em;
         }
         
         .gift-certificate-2__row {
@@ -1339,23 +1382,23 @@
         
         .gift-certificate-2__price {
             color: #03008D;;
-            padding-left: 5em;
+            padding-left: 1em;
         }
         
         .gift-certificate-2__time {
-            padding-right: 5em;
+            padding-right: 1em;
         }
         
         .gift-certificate-2__price,
         .gift-certificate-2__time {
-            font-weight: 800;
+            font-weight: 700;
             font-size: 2em;
         }
         
         .gift-certificate-2__row-with-border {
             border-bottom: 1px solid black;
         }
-    } */
+    }
 
     /* 6 блок - Чем отличается Boeing от Airbus? */
     /* .bl6 {
