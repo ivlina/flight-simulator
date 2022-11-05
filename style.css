@@ -16,6 +16,11 @@
             color: white;
             font-family: 'Gilroy', Arial, sans-serif;
         }
+
+        .navigation__choice {
+            color: white;
+            text-decoration: none;
+        }
     
     @media (min-width: 1440px) and (max-width: 1920px) {
         .header__navigation {
@@ -254,7 +259,7 @@
         .header__picture {
             position: absolute;
             right: -5px;
-            top: -100px;
+            top: -70px;
             width: 60%;
             z-index: 0;
         }
@@ -621,7 +626,6 @@
         .gift-certificate__row-with-border {
             border-bottom: 1px solid black;
         }
-
     }
 
     /* 2 блок - Авиатренажёры Boeing 737...
@@ -1019,7 +1023,7 @@
 
     /* 5 блок - Сертификат на полёт */
 
-    @media (min-width: 1440px) and (max-width: 1920px) {
+    /* @media (min-width: 1440px) and (max-width: 1920px) {
         .certificate-block {
             background-image: url(assets/images/section-5/background-cloud.png);
             background-repeat: no-repeat;
@@ -1346,9 +1350,65 @@
         .gift-certificate-2__row-with-border {
             border-bottom: 1px solid black;
         }
-    }
+    } */
 
-   /* 6 блок - Чем отличается Boeing от Airbus? */
+    /* 6 блок - Чем отличается Boeing от Airbus? */
+    /* .bl6 {
+        font-size: 48px;
+        color: #03008D;}
+    .block6 {
+        display: grid;
+        grid-template-areas:"title6 title6"
+                            "content-1 content-2"
+                            "text6 text6";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-top: 0.5em;
+        background-image: url('img/a320-clipart-7\ \(1\).png'), url('img/lrg_737max8\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+    background-size: 400px 550px, 370px 500px;
+        font-family: 'Acrom', Sans-Serif;
+        font-style: normal;
+    }
+    .title6 {
+        justify-self: center;
+        grid-area: title6;
+        font-size: 48px;
+        color: #03008D;
+    }
+    .content-1 {
+        justify-self: center;
+        align-self: end;
+        grid-area: content-1;
+    }
+    .content-2 {
+        justify-self: center;
+        align-self: end;
+        grid-area: content-2;
+    }
+    .text6 {
+        justify-self: center;
+        width: 100vh;
+        font-family: 'Gilroy', Arial, sans-serif;
+        background: url(img/Frame\ \(1\).png);
+        background-repeat: no-repeat;
+        background-position:center top 0px;
+        background-size: 100% 40%;
+        padding-bottom: 238px;
+        grid-area: text6;
+    }
+    p {width: 75vh;
+        line-height: 29px;}
+    ul {
+        list-style-image: url("img/Rectangle\ 36\ \(1\).png");
+    }
+    li {
+        margin-bottom: 0.5em;
+    }
+    .list2 {
+        direction: rtl;
+        float: left;} */
 
     /* 7 блок - Отзывы наших гостей */
     .block7 {
@@ -1804,11 +1864,14 @@
 
     .footer-top__contact {
         font-family: 'Acrom', Arial, sans-serif;
-        font-style: bold;
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 77px;
+        font-weight: bold;
+        font-size: 4em;
+        line-height: 4.8125em;
         color: #03008D;
+    }
+
+    .footer-top__contact-position {
+        padding-left: 237px;
     }
 
     .footer-top__background {
@@ -1849,9 +1912,8 @@
 
     .item__text {
         font-family: 'Gilroy', Arial, sans-serif;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 38px;
+        font-size: 1.875em;
+        line-height: 1.8em;
         color: #FFFFFF;
         margin: 0;
         text-decoration: none;
@@ -1891,6 +1953,11 @@
         min-height: 57px;
         border: 3px solid white;
         border-radius: 16px;
+    }
+
+    .item-social__clic {
+        display: block;
+        height: 100%;
     }
 
     .item-social__facebook {
@@ -1933,6 +2000,7 @@
         display: flex;
         justify-content: space-between;
         padding-left: 40px;
+        margin: 0;
     }
 
     .subscribe,
@@ -1957,49 +2025,79 @@
         margin-bottom: 15px;
     }
 
+    .telepfone {
+        display: flex;
+        align-items: start;
+        padding-top: 10px;
+    }
+
+
     @media screen and (max-width: 1366px) {
         .footer {
             max-width: 1366px;
         }
 
         .footer-top__contact {
-            font-size: 48px;
-            line-height: 58px;
+            font-size: 3em;
+            line-height: 3.625em;
+        }
+
+        .footer-middle__map {
+            min-height: 438px;
+        }
+
+        .footer-top__contact-position {
+            padding-left: 123px;
         }
     }
 
     @media screen and (max-width: 1119px) {
         .footer {
             max-width: 1119px;
-            min-width: 768px;
         }
 
         .footer-top__contact {
-            font-size: 36px;
-            line-height: 43px;
+            font-size: 2.25em;
+            line-height: 2.6875em;
         }
 
         .footer-bottom {
             padding: 2%;
+        }
+
+        .footer-middle__map {
+            min-height: 351px;
+        }
+
+        .footer-top__contact-position {
+            padding-left: 0;
         }
     }
 
     @media screen and (max-width: 767px) {
         .footer {
             max-width: 767px;
-            min-width: 321px;
         }
 
         .footer-top__contact {
-            font-size: 18px;
-            line-height: 22px;
+            font-weight: 600;
+            font-size: 3.188em;
+        }
+
+        .footer-top__contact-position {
+            padding-left: 0;
+        }
+
+        .footer-middle__map {
+            min-height: 321px;
         }
 
         .footer-bottom {
-            padding: 50px;
+            height: 1200px;
+            padding: 30px;
             justify-content: center;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr) 2fr;
             grid-template-areas:
                 "address"
                 "mail "
@@ -2017,17 +2115,19 @@
         .logo {
             display: flex;
             justify-content: center;
-            padding: 0;
+            padding: 0px;
+
         }
 
         .item__text {
-            font-size: 36px;
-            line-height: 48px;
+            font-size: 2.25em;
+            line-height: 1.8em;
         }
 
         .item-social {
             justify-content: space-between;
             padding: 0 200px 0 0;
+            margin: 0px;
         }
 
         .item__logo {
@@ -2041,4 +2141,5 @@
             width: 78px;
             height: 77px;
         }
+
     }
