@@ -509,7 +509,7 @@
         }
     }
     
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (max-width: 767px) {
     
         .header__body {
             position: relative;
@@ -1423,10 +1423,8 @@
             "numbers numbers numbers";
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto;
-        /* border: 1px solid black; */
         column-gap: 1em;
         margin: 10%;
-        /* margin-top: 6739px; */
     }
 
     .block-title {
@@ -1435,15 +1433,13 @@
         padding-left: 0%;
         padding-bottom: 2%;
         margin: 0%;
-        width: 70%;
         font-family: 'Acrom', 'Sans-Serif';
         font-style: normal;
         font-weight: 700;
-        font-size: 3em;
-        line-height: 1.3;
+        font-size: 4em;
+        line-height: 4.8em;
         text-transform: uppercase;
         color: #03008D;
-        /* border: 1px solid black; */
     }
 
     .card__img {
@@ -1460,8 +1456,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 1.5em;
-        line-height: 1.3;
-        /* border: 1px solid black; */
+        line-height: 1.8em;
     }
 
     .card1 {
@@ -1471,7 +1466,6 @@
         margin: 0%;
         border-radius: 1em;
         background-color: #E5E5E5;
-        /* border: 1px solid black; */
     }
 
     .card2 {
@@ -1481,7 +1475,6 @@
         margin-left: 0%;
         height: auto;
         background-color: #E5E5E5;
-        /* border: 1px solid black; */
     }
 
     .card3 {
@@ -1490,7 +1483,6 @@
         height: auto;
         border-radius: 1em;
         background-color: #E5E5E5;
-        /* border: 1px solid black; */
     }
 
     .numbers {
@@ -1502,45 +1494,54 @@
         font-style: normal;
         font-weight: 400;
         font-size: 2.25em;
-        line-height: 1.3;
+        line-height:2.3em;
         margin: 0%;
-        color: #03008D;
-        /* border: 1px solid black; */
 
         display: flex;
         justify-content: space-between;
         width: 35%;
     }
-    
+
     .numbers__number1{
+        color:#03008D;
         text-decoration: none;
+    }
+
+    .numbers__number1:active{
+        color:#03008D;
     }
 
     .numbers__number{
         color:#6777FF;
         text-decoration: none;
     }
-    
-    
+
+    .numbers__number:hover{
+        color:#03008D;
+    }
+
     @media(max-width:1366px) and (min-width:1120px){
-        .block7{
-            /* margin-top:6139px; */
-        }
 
         .block-title {
             font-size: 3em;
-            /* border: 1px solid black; */
+            line-height: 3.6em;
         }
 
         .card__text {
+            font-weight: 500;
             font-size: 1.25em;
-            line-height: 1.2;
+            line-height: 1.5em;
             text-align:justify;
-            /* border:1px solid black; */
+        }
+
+        .numbers{
+            font-weight: 400;
+            font-size: 2.25em;
+            line-height: 2.3em;
         }
     }
     
-    @media (max-width:1119px) and (min-width:768px){
+    @media (max-width:1119px) and (min-width:767px){
         .block7{
             display: grid;
             grid-template-areas: "block-title block-title"
@@ -1548,10 +1549,8 @@
                 "numbers numbers";
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto auto auto;
-            border: 1px solid black;
             column-gap: 1em;
             margin: 10%;
-            /* margin-top: 4363px; */
         }
 
         .block-title{
@@ -1561,16 +1560,15 @@
             margin: 0%;
             font-weight: 700;
             font-size: 2.25em;
-            line-height: 1.2;
-            /* border: 1px solid black; */
+            line-height: 2.6em;
         }
     
         .card__text{
-            font-size: 1.7em;
+            font-size: 1.25em;
+            font-weight: 500;
+            line-height: 1.5em;
             padding: 3%;
-            line-height: 1.2;
             text-align:justify;
-            /* border:1px solid black; */
         }
 
         .card1 {
@@ -1578,7 +1576,6 @@
             justify-self: end;
             margin: 0%;
             border-radius: 1em;
-            /* border: 1px solid black; */
         }
 
         .card2 {
@@ -1586,7 +1583,6 @@
             border-radius: 1em;
             justify-self: center;
             margin-left:0%;
-            /* border:1px solid black; */
         }
 
         .card3 {
@@ -1599,15 +1595,14 @@
             padding-left: 0%;
             font-weight: 400;
             font-size: 1.5em;
-            line-height: 1.2;
+            line-height: 1.5em;
             margin: 0%;
             color: #03008D;
-            /* border: 1px solid black; */
             width: 45%;
         }
     }
     
-    @media (max-width:767px){
+    @media (max-width:768px){
         .block7{
             display: grid;
             grid-template-areas: "block-title"
@@ -1615,11 +1610,8 @@
                 "numbers";
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto auto;
-            /* border: 1px solid black; */
             column-gap: 1em;
-            margin:auto 10%;
-            /* margin-top: 3648px; */
-
+            margin:10%; 
         }
 
         .block-title {
@@ -1628,16 +1620,15 @@
             padding-left: 0%;
             margin: 0%;
             font-weight: 700;
-            font-size: 3em;
-            line-height: 1.2;
-            /* border: 1px solid black; */
+            font-size: 2em;
+            line-height: 1.3em;
         }
 
         .card__text{
-            font-size: 3em;
-            line-height: 1;
+            font-size: 1.5em;
+            line-height: 1.2em;
+            padding: 3%;
             text-align:justify;
-            /* border:1px solid black; */
         }
 
         .card1 {
@@ -1645,7 +1636,6 @@
             justify-self: end;
             margin: 0%;
             border-radius: 1em;
-            /* border: 1px solid black; */
         }
 
         .card2,
@@ -1656,14 +1646,43 @@
         .numbers {
             grid-area: numbers;
             padding-left:0%;
-            font-weight:700;
-            font-size: 3em;
+            font-weight:400;
+            font-size: 1.5em;
             line-height: 1.2em;
             margin: 0%;
             width: 100%;
-            /* border: 1px solid black; */
         }
     }
+
+         @media(max-width:545px){
+            
+        .block-title {
+            font-size: 1.5em;
+        }
+
+        .card__text{
+            font-size: 1.2em;
+        }
+
+        .numbers {
+            font-size: 1.5em;
+        }
+    } 
+
+    @media(max-width:412px){
+            
+        .block-title {
+            font-size: 1.2em;
+        }
+
+        .card__text{
+            font-size: 1em;
+        }
+        
+        .numbers {
+            font-size: 1.2em;
+        }
+    } 
 
 
 
