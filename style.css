@@ -1047,6 +1047,9 @@
 
             position: relative;
             height: 1276.17px;
+
+            margin-top: 40px;
+            margin-bottom: 30px;
         }
 
         .certificate-block__text {
@@ -1138,6 +1141,9 @@
 
             position: relative;
             height: 840px;
+
+            margin-top: 40px;
+            margin-bottom: 30px;
         }
 
         .certificate-block__text {
@@ -1229,6 +1235,9 @@
 
             position: relative;
             height: 540px;
+
+            margin-top: 40px;
+            margin-bottom: 30px;
         }
 
         .certificate-block__text {
@@ -1317,6 +1326,9 @@
         .certificate-block {
             margin-left: 1em;
             margin-right: 1em;
+
+            margin-top: 40px;
+            margin-bottom: 30px;
         }
 
         .certificate-block__subtitle {
