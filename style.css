@@ -32,7 +32,7 @@
             justify-content: space-between;
             align-items: center;
 
-            font-size: 1.5vh;
+            font-size: 1em;
         }
     
         .header__address {
@@ -66,7 +66,7 @@
             justify-content: space-between;
             align-items: center;
 
-            font-size: 1.5vh;
+            font-size: 1em;
         }
     
         .header__address {
@@ -88,7 +88,7 @@
     
     @media (min-width: 768px) and (max-width: 1120px) {
         .header__navigation {
-            font-size: 1.9vh;
+            font-size: 0.7em;
             padding: 1.5em 2em;
         }
         
@@ -712,7 +712,7 @@
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
             font-weight: 700;
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
         
         .gift-certificate__row {
@@ -722,17 +722,17 @@
         
         .gift-certificate__price {
             color: #03008D;;
-            padding-left: 3em;
+            padding-left: 1em;
         }
         
         .gift-certificate__time {
-            padding-right: 3em;
+            padding-right: 1em;
         }
         
         .gift-certificate__price,
         .gift-certificate__time {
             font-weight: 800;
-            font-size: 2em;
+            font-size: 1.3em;
         }
         
         .gift-certificate__row-with-border {
@@ -1443,7 +1443,7 @@
 
         .certificate-block__subtitle {
             color: #03008D;
-            font-size: 2.7em;
+            font-size: 1.3em;
             word-wrap: normal;
         }
 
@@ -1494,7 +1494,7 @@
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
             font-weight: 700;
-            font-size: 2em;
+            font-size: 1.3em;
         }
         
         .gift-certificate-2__row {
@@ -1514,7 +1514,7 @@
         .gift-certificate-2__price,
         .gift-certificate-2__time {
             font-weight: 700;
-            font-size: 2em;
+            font-size: 1.3em;
         }
         
         .gift-certificate-2__row-with-border {
@@ -2107,25 +2107,52 @@
         border: none;
     }
     
+    .infobox__button__link {
+        text-decoration: none;
+    
+        color: white;
+    }
+    
     @media (min-width:1120px) {
-        .slider {
+        .infobox__numbers {
             display: none;
         }
     }
     
     @media (max-width:1119px) and (min-width:376px) {
+        .infobox__header {
+            font-size: 3.625em;
+        }
+    
     .infobox__cards__card4 {
         display: none;
     }
     
-    .slider {
+    .infobox__numbers {
         margin-top: 90px;
         margin-left: 10%;
     }
     
-    .arrow {
+    .infobox__numbers__number {
+    margin-left: 25px;
+    margin-right: 25px;
+    
+    font-family: 'Liquid Crystal Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    }
+    
+    .infobox__numbers__arrow {
         color: #03008D;
     }
+    
+    .infobox__button__link {
+        text-decoration: none;
+    
+        color: white;
+    }
+    
     }
     
     @media (max-width:375px) {
@@ -2133,6 +2160,7 @@
             font-size: 1.125em;
             margin-left: 0;
         }
+    
         .infobox__cards {
             display: flex;
             justify-content: space-around;
@@ -2153,6 +2181,29 @@
             display: none;
         }
     
+        .infobox__numbers {
+            margin-top: 25px;
+        }
+    
+        .infobox__numbers__number {
+            padding-left:0%;
+            font-weight:400;
+            font-size: 1.5em;
+            line-height: 1.2em;
+            margin: 0%;
+            width: 100%;
+        }
+    
+        .infobox__numbers__number {
+            margin-left: 25px;
+            margin-right: 25px;
+            
+            font-family: 'Liquid Crystal Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5em;
+        }
+    
         .infobox__button__btn {
             width: 100%;
             height: auto;
@@ -2161,6 +2212,12 @@
             font-style: normal;
             font-weight: 600;
             font-size: 1.5em;
+        }
+    
+        .infobox__button__link {
+            text-decoration: none;
+    
+            color: white;
         }
     }
     /* 9 блок - Контакты и футер */
@@ -2373,6 +2430,7 @@
         .footer-top__contact {
             font-size: 2.25em;
             line-height: 2.6875em;
+            margin-left: 3em;
         }
 
         .footer-bottom {
@@ -2395,7 +2453,8 @@
 
         .footer-top__contact {
             font-weight: 600;
-            font-size: 3.188em;
+            font-size: 1.5em;
+            margin-left: 2em;
         }
 
         .footer-top__contact-position {
