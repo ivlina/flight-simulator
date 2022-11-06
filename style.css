@@ -1566,7 +1566,7 @@
     }
     .block-6__elem {
         list-style-image: url("assets/images/block7/Rectangle\ 36\ \(1\).png");
-        font-family: 'Gilroy';
+        font-family: 'Gilroy', Arial, sans-serif;
         font-size: 1.5em;
         font-weight: 500;
         font-style: normal;
@@ -1588,7 +1588,7 @@
         justify-self: center;
         font-style: normal;
         font-weight: 500;
-        font-family: 'Gilroy';
+        font-family: 'Gilroy', Arial, sans-serif;
         font-size: 1.5em;
         text-align: justify;
         line-height: 1.3em;
@@ -1596,6 +1596,9 @@
         margin-left: auto;
         margin-right: auto;
         width: 70%;
+    }
+    .switch__vectors {
+        border: 1pt solid red;
     }
     @media(min-width:1367px) {
         .block-6 {
@@ -1647,9 +1650,9 @@
         .block-6__paragraph__input {
             font-size: 1.5em;
         }
-        .switch__vectors {
+        /* .switch__vectors {
             display: none;
-        }
+        } */
     }
     @media (max-width:1119px) and (min-width:768px) {
         .block-6 {
@@ -1674,41 +1677,43 @@
     .block-6__paragraph__input {
         font-size: 1.125em;
     }
-    .switch__vectors {
+    /* .switch__vectors {
         display: none;
-    }
+    } */
 }
-    @media (min-width: 320px) and (max-width:767px) {
+    @media (max-width:767px) {
     .block-6 {
             display: grid;
             grid-template-areas:"block-6__text"
                                 "block-6__elem1"
-                                "block-6__paragraph"
-                                "switch__vectors";
+                                "block-6__paragraph";
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 2fr 0.5fr 0.5fr 0.2fr;
-            background-position: left 6.813em, right 8.875em;
+            grid-template-rows: 1fr 2fr auto;
+            background-image: url(assets/images/block7/Group_airplanes.png);
+            background-repeat: no-repeat;
+            background-position: center 5em;
+            background-size: 100vw;
+            margin-bottom: 0;
         }
     .block-6__text {
             margin: 1.5em;
-            font-size: 1.125em;
+            font-size: 1.3em;
             line-height: 21.6px;
         }
-        .block-6 {
-            background-size: 15.625em 22.825em, 15.25em 18.5em;}
     .block-6__elem {
             list-style-image: url(assets/images/block7/Rectangle\ 39.png);
-            font-size: 1em;
+            font-size: 1.1em;
+            margin-top: 12em;
     }   
     .block-6__elem2 {
         display: none;
     }
     .block-6__paragraph__input {
-        font-size: 0.875em;
+        font-size: 0.97em;
     }
-    .switch__vectors {
+    /* .switch__vectors {
         display: grid;
-    }
+    } */
     }
     /* @media (max-width: 319px) {
         .block-6 {
