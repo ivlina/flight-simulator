@@ -1400,64 +1400,251 @@
         }
     }
 
-    /* 6 блок - Чем отличается Boeing от Airbus? */
-    /* .bl6 {
-        font-size: 48px;
-        color: #03008D;}
-    .block6 {
+    .block-6 {
         display: grid;
-        grid-template-areas:"title6 title6"
-                            "content-1 content-2"
-                            "text6 text6";
+        grid-template-areas:"block-6__text block-6__text"
+                            "block-6__elem1 block-6__elem2"
+                            "block-6__paragraph block-6__paragraph"
+                            "switch__vectors switch__vectors";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 4fr 1fr 0.2fr;
         margin-top: 0.5em;
-        background-image: url('img/a320-clipart-7\ \(1\).png'), url('img/lrg_737max8\ \(1\).png');
-    background-repeat: no-repeat;
-    background-position: left center, right center;
-    background-size: 400px 550px, 370px 500px;
-        font-family: 'Acrom', Sans-Serif;
-        font-style: normal;
+        background-image: url('assets/images/block7/a320-clipart-7\ \(1\).png'), url('assets/images/block7/lrg_737max8\ \(1\).png');
+        background-repeat: no-repeat;
+        background-position: left center, right center;
+        background-size: 45.6em 58.75em, 42.5em 48.125em;
     }
-    .title6 {
+    .block-6__text {
+        grid-area: block-6__text;
         justify-self: center;
-        grid-area: title6;
-        font-size: 48px;
+        margin: 0.5em;
+        font-size: 4em;
+        line-height: 76.8px;
+    }
+    .block-6__text__subtitle {
+        font-family: 'Acrom', 'Sans-Serif';
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0.5em;
         color: #03008D;
     }
-    .content-1 {
+    .block-6__elem1 {
+        grid-area: block-6__elem1;
         justify-self: center;
         align-self: end;
-        grid-area: content-1;
     }
-    .content-2 {
+    .block-6__elem2 {
+        grid-area: block-6__elem2;
         justify-self: center;
         align-self: end;
-        grid-area: content-2;
+        direction: rtl;
+        float: left;
     }
-    .text6 {
-        justify-self: center;
-        width: 100vh;
-        font-family: 'Gilroy', Arial, sans-serif;
-        background: url(img/Frame\ \(1\).png);
-        background-repeat: no-repeat;
-        background-position:center top 0px;
-        background-size: 100% 40%;
-        padding-bottom: 238px;
-        grid-area: text6;
+    .block-6__elem {
+        font-size: 1.5em;
+        font-weight: 500;
+        list-style-image: url("assets/images/block7/Rectangle\ 36\ \(1\).png");
     }
-    p {width: 75vh;
-        line-height: 29px;}
-    ul {
-        list-style-image: url("img/Rectangle\ 36\ \(1\).png");
-    }
-    li {
+    .block-6__list {
         margin-bottom: 0.5em;
     }
-    .list2 {
+    .block-6__paragraph {
+        justify-self: center;
+        width: 100vw;
+        background: url(assets/images/block7/Frame\ \(1\).png);
+        background-repeat: no-repeat;
+        background-position:center top 0em;
+        background-size: 90% 100%;
+        grid-area: block-6__paragraph;
+    }
+    .block-6__paragraph__input {
+        justify-self: center;
+        font-style: normal;
+        font-weight: 500;
+        font-family: 'Gilroy', Arial, Sans-serif;
+        font-size: 1.5em;
+        text-align: justify;
+        line-height: 29px;
+        padding: 10pt;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    @media (max-width:1366px) and (min-width:1120px) {
+        .block-6__text {
+            margin: 0.5em;
+            font-size: 3em;
+            line-height: 58px;
+        }
+        .block-6 {
+            background-size: 35.625em 46.825em, 34.375em 40.625em;
+        }
+    }
+    @media (max-width:1119px) and (min-width:768px) {
+        .block-6__text {
+            margin: 0.5em;
+            font-size: 2.25em;
+            line-height: 43.2px;
+        }
+        .block-6 {
+            background-size: 25.625em 34.825em, 23.25em 29em;
+        }
+        .block-6__elem {
+            font-size: 1.25em;
+    }
+    .block-6__paragraph__input {
+        font-size: 1.125em;
+    }
+}
+    @media (max-width:767px) {
+        .block-6 {
+            display: grid;
+            grid-template-areas:"block-6__text"
+                                "block-6__elem1"
+                                "block-6__paragraph"
+                                "switch__vectors";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 4fr 1fr 0.2fr;
+        }
+        .block-6__text {
+            margin: 0.5em;
+            font-size: 1.125em;
+            line-height: 21.6px;
+        }
+        .block-6 {
+            background-size: 15.625em 22.825em, 15.25em 18em;
+        }
+        .block-6__elem {
+            font-size: 1em;
+    }
+    .block-6__paragraph__input {
+        font-size: 0.875em;
+    }
+    }.block-6 {
+        display: grid;
+        grid-template-areas:"block-6__text block-6__text"
+                            "block-6__elem1 block-6__elem2"
+                            "block-6__paragraph block-6__paragraph"
+                            "switch__vectors switch__vectors";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr 1fr 0.2fr;
+        margin-top: 0.5em;
+        background-image: url('assets/images/block7/a320-clipart-7\ \(1\).png'), url('assets/images/block7/lrg_737max8\ \(1\).png');
+        background-repeat: no-repeat;
+        background-position: left center, right center;
+        background-size: 45.6em 58.75em, 42.5em 48.125em;
+    }
+    .block-6__text {
+        grid-area: block-6__text;
+        justify-self: center;
+        margin: 0.5em;
+        font-size: 4em;
+        line-height: 76.8px;
+    }
+    .block-6__text__subtitle {
+        font-family: 'Acrom', 'Sans-Serif';
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0.5em;
+        color: #03008D;
+    }
+    .block-6__elem1 {
+        grid-area: block-6__elem1;
+        justify-self: center;
+        align-self: end;
+    }
+    .block-6__elem2 {
+        grid-area: block-6__elem2;
+        justify-self: center;
+        align-self: end;
         direction: rtl;
-        float: left;} */
-
+        float: left;
+    }
+    .block-6__elem {
+        font-size: 1.5em;
+        font-weight: 500;
+        list-style-image: url("assets/images/block7/Rectangle\ 36\ \(1\).png");
+    }
+    .block-6__list {
+        margin-bottom: 0.5em;
+    }
+    .block-6__paragraph {
+        justify-self: center;
+        width: 100vw;
+        background: url(assets/images/block7/Frame\ \(1\).png);
+        background-repeat: no-repeat;
+        background-position:center top 0em;
+        background-size: 90% 100%;
+        grid-area: block-6__paragraph;
+    }
+    .block-6__paragraph__input {
+        justify-self: center;
+        font-style: normal;
+        font-weight: 500;
+        font-family: 'Gilroy', Arial, Sans-serif;
+        font-size: 1.5em;
+        text-align: justify;
+        line-height: 29px;
+        padding: 10pt;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    @media (max-width:1366px) and (min-width:1120px) {
+        .block-6__text {
+            margin: 0.5em;
+            font-size: 3em;
+            line-height: 58px;
+        }
+        .block-6 {
+            background-size: 35.625em 46.825em, 34.375em 40.625em;
+        }
+    }
+    @media (max-width:1119px) and (min-width:768px) {
+        .block-6__text {
+            margin: 0.5em;
+            font-size: 2.25em;
+            line-height: 43.2px;
+        }
+        .block-6 {
+            background-size: 25.625em 34.825em, 23.25em 29em;
+        }
+        .block-6__elem {
+            font-size: 1.25em;
+    }
+    .block-6__paragraph__input {
+        font-size: 1.125em;
+    }
+}
+    @media (max-width:767px) {
+        .block-6 {
+            display: grid;
+            grid-template-areas:"block-6__text"
+                                "block-6__elem1"
+                                "block-6__paragraph"
+                                "switch__vectors";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 4fr 1fr 0.2fr;
+        }
+        .block-6__text {
+            margin: 0.5em;
+            font-size: 1.125em;
+            line-height: 21.6px;
+        }
+        .block-6 {
+            background-size: 15.625em 22.825em, 15.25em 18em;
+        }
+        .block-6__elem {
+            font-size: 1em;
+    }
+    .block-6__paragraph__input {
+        font-size: 0.875em;
+    }
+    }
     /* 7 блок - Отзывы наших гостей */
     .block7 {
         display: grid;
