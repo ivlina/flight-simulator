@@ -50,6 +50,10 @@
         .navigation {
             display: none;
         }
+
+        .hamburger-menu {
+            display: none;
+        }
     }
     
     @media (min-width: 1120px) and (max-width: 1440px) {
@@ -75,6 +79,10 @@
         
         .header__address {
             padding-bottom: 30px;
+        }
+
+        .hamburger-menu {
+            display: none;
         }
     }
     
@@ -105,9 +113,13 @@
         .header__phone {
             font-weight: bold;
         }
+
+        .hamburger-menu {
+            display: none;
+        }
     }
     
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (max-width: 767px) {
         .header__navigation {
             height: 30vh;
         }
@@ -122,6 +134,104 @@
         .header__address {
             display: none;
         }
+
+
+        #menu__toggle {
+            opacity: 0;
+          }
+          
+          #menu__toggle:checked ~ .menu__btn > span {
+            transform: rotate(45deg);
+          }
+          #menu__toggle:checked ~ .menu__btn > span::before {
+            top: 0;
+            transform: rotate(0);
+          }
+          #menu__toggle:checked ~ .menu__btn > span::after {
+            top: 0;
+            transform: rotate(90deg);
+          }
+          #menu__toggle:checked ~ .menu__box {
+            visibility: visible;
+            left: 0;
+          }
+          
+          .menu__btn {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 100px;
+            right: 10%;
+          
+            width: 26px;
+            height: 26px;
+          
+            cursor: pointer;
+            z-index: 4;
+          }
+          
+          .menu__btn > span,
+          .menu__btn > span::before,
+          .menu__btn > span::after {
+            display: block;
+            position: absolute;
+          
+            width: 100%;
+            height: 4px;
+            border-radius: 30px;
+          
+            background-color: white;
+          
+            transition-duration: .25s;
+          }
+          .menu__btn > span::before {
+            content: '';
+            top: -8px;
+          }
+          .menu__btn > span::after {
+            content: '';
+            top: 8px;
+          }
+          
+          .menu__box {
+            display: block;
+            position: fixed;
+            z-index: 4;
+            visibility: hidden;
+            top: 0;
+            left: -100%;
+          
+            width: 300px;
+            height: 100%;
+          
+            margin: 0;
+            padding: 80px 0;
+          
+            list-style: none;
+          
+            background-color: #6777FF;
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+          
+            transition-duration: .25s;
+          }
+          
+          .menu__item {
+            display: block;
+            padding: 12px 24px;
+          
+            color: white;
+          
+            font-size: 20px;
+            font-weight: 600;
+          
+            text-decoration: none;
+          
+            transition-duration: .25s;
+          }
+          .menu__item:hover {
+            background-color: #03008D;
+          }
+        
     }
     
     /* Основная часть */
@@ -1047,6 +1157,9 @@
 
             position: relative;
             height: 1276.17px;
+
+            margin-top: 40px;
+            margin-bottom: 30px;
         }
 
         .certificate-block__text {
@@ -1138,6 +1251,9 @@
 
             position: relative;
             height: 840px;
+
+            margin-top: 40px;
+            margin-bottom: 30px;
         }
 
         .certificate-block__text {
@@ -1229,6 +1345,9 @@
 
             position: relative;
             height: 540px;
+
+            margin-top: 40px;
+            margin-bottom: 30px;
         }
 
         .certificate-block__text {
@@ -1317,6 +1436,9 @@
         .certificate-block {
             margin-left: 1em;
             margin-right: 1em;
+
+            margin-top: 40px;
+            margin-bottom: 30px;
         }
 
         .certificate-block__subtitle {
@@ -1615,7 +1737,7 @@
         padding-left: 0%;
         padding-bottom: 2%;
         margin: 0%;
-        font-family: 'Acrom', 'Sans-Serif';
+        font-family: 'Acrom', Arial, sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 4em;
@@ -1634,7 +1756,7 @@
         text-align: justify;
         padding: 3%;
         margin: 0%;
-        font-family: 'Gilroy';
+        font-family: 'Gilroy', Arial, sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 1.5em;
@@ -1871,8 +1993,8 @@
 
     /* 8 блок - Наши инструктора */
     @font-face {
-        font-family: 'Gilroy', Arial, sans-serif;;
-        src: url();
+        font-family: 'Gilroy', Arial, sans-serif;
+        src: url(assets/fonts/font_Gilroy/Gilroy-Regular.ttf);
     }
     
     .infobox__header {
