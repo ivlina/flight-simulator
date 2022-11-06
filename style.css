@@ -1995,6 +1995,8 @@
     @font-face {
         font-family: 'Gilroy', Arial, sans-serif;
         src: url(assets/fonts/font_Gilroy/Gilroy-Regular.ttf);
+        font-family: 'Liquid Crystal Display';
+        src: url(assets/fonts/Liquid_Crystal_Display/liquid_crystaldisplay.ttf);
     }
     
     .infobox__header {
@@ -2102,36 +2104,60 @@
         border: none;
     }
     
+    .infobox__button__link {
+        text-decoration: none;
+    
+        color: white;
+    }
+    
     @media (min-width:1120px) {
-        .slider {
+        .infobox__numbers {
             display: none;
         }
     }
     
     @media (max-width:1119px) and (min-width:376px) {
+        .infobox__header {
+            font-size: 3.625em;
+        }
+    
     .infobox__cards__card4 {
         display: none;
     }
     
-    .slider {
+    .infobox__numbers {
         margin-top: 90px;
         margin-left: 10%;
     }
     
-    .arrow {
+    .infobox__numbers__number {
+    margin-left: 25px;
+    margin-right: 25px;
+    
+    font-family: 'Liquid Crystal Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    }
+    
+    .infobox__numbers__arrow {
         color: #03008D;
     }
-
-    .infobox__header {
-        font-size: 2.25em;
+    
+    .infobox__button__link {
+        text-decoration: none;
+    
+        color: white;
     }
+    
     }
     
     @media (max-width:375px) {
         .infobox__header {
-            font-size: 1.5em;
-            margin-right: 3em;
+            font-size: 1.125em;
+            margin-left: 0;
         }
+    
         .infobox__cards {
             display: flex;
             justify-content: space-around;
@@ -2152,6 +2178,29 @@
             display: none;
         }
     
+        .infobox__numbers {
+            margin-top: 25px;
+        }
+    
+        .infobox__numbers__number {
+            padding-left:0%;
+            font-weight:400;
+            font-size: 1.5em;
+            line-height: 1.2em;
+            margin: 0%;
+            width: 100%;
+        }
+    
+        .infobox__numbers__number {
+            margin-left: 25px;
+            margin-right: 25px;
+            
+            font-family: 'Liquid Crystal Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5em;
+        }
+    
         .infobox__button__btn {
             width: 100%;
             height: auto;
@@ -2160,6 +2209,12 @@
             font-style: normal;
             font-weight: 600;
             font-size: 1.5em;
+        }
+    
+        .infobox__button__link {
+            text-decoration: none;
+    
+            color: white;
         }
     }
     /* 9 блок - Контакты и футер */
