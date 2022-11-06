@@ -1995,8 +1995,6 @@
     @font-face {
         font-family: 'Gilroy', Arial, sans-serif;
         src: url(assets/fonts/font_Gilroy/Gilroy-Regular.ttf);
-        font-family: 'Liquid Crystal Display';
-        src: url(assets/fonts/Liquid_Crystal_Display/liquid_crystaldisplay.ttf);
     }
     
     .infobox__header {
