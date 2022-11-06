@@ -1931,8 +1931,8 @@
 
     /* 8 блок - Наши инструктора */
     @font-face {
-        font-family: 'Gilroy', Arial, sans-serif;;
-        src: url();
+        font-family: 'Gilroy', Arial, sans-serif;
+        src: url(assets/fonts/font_Gilroy/Gilroy-Regular.ttf);
     }
     
     .infobox__header {
