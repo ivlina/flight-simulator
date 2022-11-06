@@ -1785,7 +1785,7 @@
         padding-left: 0%;
         padding-bottom: 2%;
         margin: 0%;
-        font-family: 'Acrom', 'Sans-Serif';
+        font-family: 'Acrom', Arial, sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 4em;
@@ -1804,7 +1804,7 @@
         text-align: justify;
         padding: 3%;
         margin: 0%;
-        font-family: 'Gilroy';
+        font-family: 'Gilroy', Arial, sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 1.5em;
